@@ -4,16 +4,6 @@
       <NuxtLink :to="localePath('/')" class="header__logo" aria-label="Home">
         <img src="/assets/logo.png" alt="MSITE.TOP" width="140" height="44">
       </NuxtLink>
-      <input
-        id="header-menu-toggle"
-        v-model="menuOpen"
-        type="checkbox"
-        class="visually-hidden"
-        aria-hidden="true"
-      >
-      <label for="header-menu-toggle" class="header__burger" aria-label="Open menu">
-        <span /><span /><span />
-      </label>
       <nav class="header__nav" :class="{ 'is-open': menuOpen }" aria-label="Main navigation">
         <ul class="header__menu">
           <li><NuxtLink :to="localePath('/#services')" @click="closeMenu">{{ $t('header.services') }}</NuxtLink></li>

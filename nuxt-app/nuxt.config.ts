@@ -60,15 +60,6 @@ export default defineNuxtConfig({
     }
   },
   css: ['../styles.css'],
-  router: {
-    options: {
-      scrollBehavior (to, _from, savedPosition) {
-        if (to.hash) return { el: to.hash, behavior: 'smooth' }
-        if (savedPosition) return savedPosition
-        return { top: 0 }
-      }
-    }
-  },
   vite: {
     css: {
       devSourcemap: true
