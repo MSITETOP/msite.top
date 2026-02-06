@@ -800,7 +800,8 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
 
 /* Process */
 .section--process { 
-  background: var(--color-bg);
+  /* background: var(--color-bg); */
+  background: var(--color-bg-alt);
   position: relative;
 }
 .section--process::before {
