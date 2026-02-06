@@ -28,7 +28,8 @@
       const pageInfo = this.getCurrentPageInfo();
       
       // Если мы на главной странице, используем якоря, иначе полные ссылки
-      const baseUrl = pageInfo.isIndex ? '' : 'index.html';
+      const baseUrl = pageInfo.isIndex ? '' : (pageInfo.isEs ? 'index-es.html' : 'index.html');
+      const indexUrl = pageInfo.isEs ? 'index-es.html' : 'index.html';
       
       // Обновляем ссылки меню
       const menuLinks = headerElement.querySelectorAll('.header__menu a');
@@ -44,7 +45,7 @@
       // Обновляем ссылку на логотип
       const logoLink = headerElement.querySelector('.header__logo');
       if (logoLink) {
-        logoLink.href = pageInfo.isIndex ? '#' : 'index.html';
+        logoLink.href = pageInfo.isIndex ? '#' : indexUrl;
       }
       
       // Обновляем CTA кнопки
@@ -102,7 +103,8 @@
      */
     updateFooterLinks: function(footerElement) {
       const pageInfo = this.getCurrentPageInfo();
-      const baseUrl = pageInfo.isIndex ? '' : 'index.html';
+      const baseUrl = pageInfo.isIndex ? (pageInfo.isEs ? 'index-es.html' : 'index.html') : (pageInfo.isEs ? 'index-es.html' : 'index.html');
+      const indexUrl = pageInfo.isEs ? 'index-es.html' : 'index.html';
       
       // Обновляем ссылки в колонках
       const serviceLinks = footerElement.querySelectorAll('.footer__col:first-child a');
@@ -120,10 +122,18 @@
         }
       });
       
+      // Обновляем ссылки на юридические страницы в третьей колонке
+      const legalLinks = footerElement.querySelectorAll('.footer__col:nth-child(3) a');
+      if (legalLinks.length >= 3) {
+        legalLinks[0].href = pageInfo.isEs ? 'privacy-policy-es.html' : 'privacy-policy.html';
+        legalLinks[1].href = pageInfo.isEs ? 'terms-es.html' : 'terms.html';
+        legalLinks[2].href = pageInfo.isEs ? 'gdpr-es.html' : 'gdpr.html';
+      }
+      
       // Обновляем ссылку на логотип
       const logoLink = footerElement.querySelector('.footer__logo');
       if (logoLink) {
-        logoLink.href = pageInfo.isIndex ? '#' : 'index.html';
+        logoLink.href = pageInfo.isIndex ? '#' : indexUrl;
       }
       
       // Обновляем переключатель языка в footer

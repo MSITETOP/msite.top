@@ -1012,8 +1012,18 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
   gap: var(--spacing-xs);
   font-size: 0.9375rem;
 }
-.footer__contact a { color: #b0b0b0; }
+.footer__contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: #b0b0b0;
+  transition: color 0.2s;
+}
 .footer__contact a:hover { color: #fff; }
+.footer__contact-icon {
+  flex-shrink: 0;
+  color: currentColor;
+}
 .footer__links {
   display: flex;
   gap: var(--spacing-2xl);

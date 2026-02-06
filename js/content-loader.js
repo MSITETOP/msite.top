@@ -188,8 +188,11 @@
         const legalLinks = footerCols[2].querySelectorAll('a');
         if (legalLinks.length >= 3) {
           legalLinks[0].textContent = footer.links.privacy;
+          legalLinks[0].href = this.locale === 'es' ? 'privacy-policy-es.html' : 'privacy-policy.html';
           legalLinks[1].textContent = footer.links.terms;
+          legalLinks[1].href = this.locale === 'es' ? 'terms-es.html' : 'terms.html';
           legalLinks[2].textContent = footer.links.gdpr;
+          legalLinks[2].href = this.locale === 'es' ? 'gdpr-es.html' : 'gdpr.html';
         }
       }
 
