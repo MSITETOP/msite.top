@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "title": "Términos de Uso | M SITE.TOP",
+    "description": "Términos de Uso - M SITE.TOP servicios Bitrix24. Términos y condiciones para usar nuestro sitio web y servicios.",
+    "keywords": "términos de uso, términos y condiciones, M SITE.TOP"
+  },
+  "content": {
+    "title": "Términos de Uso",
+    "lastUpdated": "2 de febrero de 2025",
+    "sections": [
+      {
+        "id": "aceptacion",
+        "title": "1. Aceptación de Términos",
+        "paragraphs": [
+          "Al acceder y usar el sitio web y servicios de M SITE.TOP, aceptas y acuerdas estar sujeto a estos Términos de Uso. Si no estás de acuerdo con estos términos, por favor no uses nuestro sitio web o servicios."
+        ]
+      },
+      {
+        "id": "descripcion",
+        "title": "2. Descripción de Servicios",
+        "paragraphs": [
+          "M SITE.TOP proporciona servicios de implementación, personalización, automatización, integración, formación y soporte de Bitrix24. Somos un Socio Silver de Bitrix24 especializado en ayudar a empresas a configurar y optimizar sus sistemas Bitrix24."
+        ]
+      },
+      {
+        "id": "uso-sitio",
+        "title": "3. Uso del Sitio Web",
+        "subsections": [
+          {
+            "title": "3.1 Uso Permitido",
+            "paragraphs": [
+              "Puedes usar nuestro sitio web solo para fines legales. Aceptas no:"
+            ],
+            "list": [
+              "Usar el sitio web de manera que viole leyes o regulaciones aplicables",
+              "Intentar obtener acceso no autorizado a cualquier parte del sitio web",
+              "Transmitir virus, malware o código dañino",
+              "Usar sistemas automatizados para acceder al sitio web sin permiso",
+              "Copiar, modificar o distribuir contenido sin autorización"
+            ]
+          },
+          {
+            "title": "3.2 Propiedad Intelectual",
+            "paragraphs": [
+              "Todo el contenido en este sitio web, incluyendo texto, gráficos, logos y software, es propiedad de M SITE.TOP o sus licenciantes y está protegido por leyes de derechos de autor y otras leyes de propiedad intelectual."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "acuerdos-servicio",
+        "title": "4. Acuerdos de Servicio",
+        "paragraphs": [
+          "Cuando contratas nuestros servicios, se proporcionará un acuerdo de servicio separado que describe:"
+        ],
+        "list": [
+          "Alcance del trabajo y entregables",
+          "Cronograma e hitos",
+          "Precios y términos de pago",
+          "Responsabilidades de ambas partes",
+          "Garantías y limitaciones"
+        ],
+        "paragraphsAfter": [
+          "El acuerdo de servicio tendrá precedencia sobre estos Términos de Uso para asuntos relacionados con contrataciones específicas de servicios."
+        ]
+      },
+      {
+        "id": "responsabilidades-cliente",
+        "title": "5. Responsabilidades del Cliente",
+        "paragraphs": [
+          "Al usar nuestros servicios, aceptas:"
+        ],
+        "list": [
+          "Proporcionar información precisa y completa",
+          "Otorgar acceso necesario a sistemas y datos según se requiera para la prestación del servicio",
+          "Responder a solicitudes de manera oportuna",
+          "Cumplir con todas las leyes y regulaciones aplicables",
+          "Mantener copias de seguridad apropiadas de tus datos"
+        ]
+      },
+      {
+        "id": "limitacion-responsabilidad",
+        "title": "6. Limitación de Responsabilidad",
+        "paragraphs": [
+          "En la máxima medida permitida por la ley:"
+        ],
+        "list": [
+          "M SITE.TOP no será responsable de daños indirectos, incidentales, especiales o consecuentes",
+          "Nuestra responsabilidad total no excederá el monto pagado por ti por el servicio específico en cuestión",
+          "No somos responsables de ninguna pérdida de datos, ganancias u oportunidades comerciales",
+          "No garantizamos servicio ininterrumpido o libre de errores"
+        ]
+      },
+      {
+        "id": "servicios-terceros",
+        "title": "7. Servicios de Terceros",
+        "paragraphs": [
+          "Nuestros servicios pueden involucrar productos y servicios de terceros, incluyendo Bitrix24. No somos responsables de la disponibilidad, rendimiento o términos de servicios de terceros. Tu uso de Bitrix24 está sujeto a los propios términos y condiciones de Bitrix24."
+        ]
+      },
+      {
+        "id": "confidencialidad",
+        "title": "8. Confidencialidad",
+        "paragraphs": [
+          "Respetamos la confidencialidad de tu información comercial. No divulgaremos tu información confidencial a terceros excepto:"
+        ],
+        "list": [
+          "Según sea necesario para proporcionar nuestros servicios",
+          "Con tu consentimiento explícito",
+          "Según lo requiera la ley"
+        ]
+      },
+      {
+        "id": "terminacion",
+        "title": "9. Terminación",
+        "paragraphs": [
+          "Nos reservamos el derecho de terminar o suspender tu acceso a nuestro sitio web o servicios en cualquier momento, con o sin aviso, por cualquier razón, incluyendo violación de estos Términos de Uso."
+        ]
+      },
+      {
+        "id": "cambios",
+        "title": "10. Cambios a los Términos",
+        "paragraphs": [
+          "Podemos modificar estos Términos de Uso en cualquier momento. Te notificaremos de cambios significativos publicando los términos actualizados en esta página y actualizando la fecha de \"Última actualización\". Tu uso continuo de nuestro sitio web o servicios después de los cambios constituye aceptación de los términos modificados."
+        ]
+      },
+      {
+        "id": "ley-aplicable",
+        "title": "11. Ley Aplicable",
+        "paragraphs": [
+          "Estos Términos de Uso se regirán e interpretarán de acuerdo con las leyes aplicables. Cualquier disputa que surja de estos términos o nuestros servicios se resolverá a través de canales legales apropiados."
+        ]
+      },
+      {
+        "id": "divisibilidad",
+        "title": "12. Divisibilidad",
+        "paragraphs": [
+          "Si alguna disposición de estos Términos de Uso se considera inválida o inaplicable, las disposiciones restantes continuarán en pleno vigor y efecto."
+        ]
+      },
+      {
+        "id": "contacto",
+        "title": "13. Información de Contacto",
+        "paragraphs": [
+          "Si tienes preguntas sobre estos Términos de Uso, contáctanos:",
+          "M SITE.TOP\nEmail: b24@msite.top\nTeléfono: +34 614 33 27 85"
+        ]
+      }
+    ]
+  }
+}

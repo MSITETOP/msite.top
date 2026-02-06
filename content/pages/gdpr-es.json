@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "title": "Cumplimiento RGPD | M SITE.TOP",
+    "description": "Cumplimiento RGPD - M SITE.TOP. Cómo manejamos la protección de datos y cumplimos con los requisitos del RGPD.",
+    "keywords": "RGPD, protección de datos, cumplimiento, M SITE.TOP"
+  },
+  "content": {
+    "title": "Cumplimiento RGPD",
+    "lastUpdated": "2 de febrero de 2025",
+    "sections": [
+      {
+        "id": "compromiso",
+        "title": "1. Nuestro Compromiso con el RGPD",
+        "paragraphs": [
+          "M SITE.TOP está comprometido con el cumplimiento del Reglamento General de Protección de Datos (RGPD) (UE) 2016/679. Reconocemos la importancia de la protección de datos y los derechos de privacidad, e implementamos medidas apropiadas para asegurar el cumplimiento."
+        ]
+      },
+      {
+        "id": "que-es-rgpd",
+        "title": "2. ¿Qué es el RGPD?",
+        "paragraphs": [
+          "El RGPD es una ley integral de protección de datos que entró en vigor el 25 de mayo de 2018 en la Unión Europea. Fortalece y unifica la protección de datos para individuos dentro de la UE y aborda la exportación de datos personales fuera de la UE."
+        ]
+      },
+      {
+        "id": "como-cumplimos",
+        "title": "3. Cómo Cumplimos con el RGPD",
+        "subsections": [
+          {
+            "title": "3.1 Base Legal para el Tratamiento",
+            "paragraphs": [
+              "Procesamos datos personales solo cuando tenemos una base legal, incluyendo:"
+            ],
+            "list": [
+              "Consentimiento: Cuando has dado consentimiento claro para propósitos específicos",
+              "Contrato: Cuando el tratamiento es necesario para un contrato o para tomar medidas antes de celebrar un contrato",
+              "Obligación legal: Cuando necesitamos cumplir con requisitos legales",
+              "Intereses legítimos: Cuando el tratamiento es necesario para nuestros intereses comerciales legítimos, equilibrados con tus derechos"
+            ]
+          },
+          {
+            "title": "3.2 Minimización de Datos",
+            "paragraphs": [
+              "Recopilamos y procesamos solo los datos personales que son necesarios para los propósitos para los cuales se procesan. No recopilamos datos excesivos o irrelevantes."
+            ]
+          },
+          {
+            "title": "3.3 Limitación de Propósito",
+            "paragraphs": [
+              "Recopilamos datos personales para propósitos específicos, explícitos y legítimos y no los procesamos de manera incompatible con esos propósitos."
+            ]
+          },
+          {
+            "title": "3.4 Precisión de Datos",
+            "paragraphs": [
+              "Tomamos medidas razonables para asegurar que los datos personales sean precisos y se mantengan actualizados. Puedes solicitar correcciones a tus datos en cualquier momento."
+            ]
+          },
+          {
+            "title": "3.5 Limitación de Almacenamiento",
+            "paragraphs": [
+              "Conservamos datos personales solo durante el tiempo necesario para cumplir los propósitos para los cuales fueron recopilados, a menos que un período de retención más largo sea requerido por ley."
+            ]
+          },
+          {
+            "title": "3.6 Medidas de Seguridad",
+            "paragraphs": [
+              "Implementamos medidas técnicas y organizativas apropiadas para proteger datos personales contra acceso no autorizado, pérdida, destrucción o alteración, incluyendo:"
+            ],
+            "list": [
+              "Cifrado de datos en tránsito y en reposo",
+              "Controles de acceso y autenticación",
+              "Evaluaciones regulares de seguridad",
+              "Formación del personal en protección de datos"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tus-derechos",
+        "title": "4. Tus Derechos Bajo el RGPD",
+        "paragraphs": [
+          "Como sujeto de datos, tienes los siguientes derechos:"
+        ],
+        "subsections": [
+          {
+            "title": "4.1 Derecho de Acceso",
+            "paragraphs": [
+              "Tienes derecho a obtener confirmación sobre si procesamos tus datos personales y a acceder a esos datos, junto con información sobre cómo se procesan."
+            ]
+          },
+          {
+            "title": "4.2 Derecho de Rectificación",
+            "paragraphs": [
+              "Tienes derecho a que se corrijan datos personales inexactos y se completen datos incompletos."
+            ]
+          },
+          {
+            "title": "4.3 Derecho de Supresión (\"Derecho al Olvido\")",
+            "paragraphs": [
+              "Tienes derecho a solicitar la eliminación de tus datos personales cuando:"
+            ],
+            "list": [
+              "Los datos ya no son necesarios para el propósito original",
+              "Retiras el consentimiento y no hay otra base legal",
+              "Los datos han sido procesados ilegalmente",
+              "La eliminación es requerida para cumplir con una obligación legal"
+            ]
+          },
+          {
+            "title": "4.4 Derecho a Restringir el Tratamiento",
+            "paragraphs": [
+              "Tienes derecho a restringir el tratamiento de tus datos personales en ciertas circunstancias, como cuando impugnas la precisión de los datos."
+            ]
+          },
+          {
+            "title": "4.5 Derecho a la Portabilidad de Datos",
+            "paragraphs": [
+              "Tienes derecho a recibir tus datos personales en un formato estructurado, de uso común y legible por máquina y a transmitirlos a otro controlador."
+            ]
+          },
+          {
+            "title": "4.6 Derecho de Oposición",
+            "paragraphs": [
+              "Tienes derecho a oponerte al tratamiento de tus datos personales basado en intereses legítimos o para fines de marketing directo."
+            ]
+          },
+          {
+            "title": "4.7 Derechos Relacionados con la Toma de Decisiones Automatizadas",
+            "paragraphs": [
+              "Tienes derecho a no estar sujeto a decisiones basadas únicamente en procesamiento automatizado, incluyendo perfilado, que produzca efectos legales o te afecte significativamente de manera similar."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ejercer-derechos",
+        "title": "5. Ejercer tus Derechos",
+        "paragraphs": [
+          "Para ejercer cualquiera de tus derechos del RGPD, contáctanos en b24@msite.top. Responderemos a tu solicitud dentro de un mes, o dentro de dos meses si la solicitud es compleja.",
+          "Podemos solicitar verificación de tu identidad antes de procesar tu solicitud para asegurar la seguridad de tus datos personales."
+        ]
+      },
+      {
+        "id": "procesamiento-bitrix24",
+        "title": "6. Procesamiento de Datos en Servicios Bitrix24",
+        "paragraphs": [
+          "Cuando proporcionamos servicios de implementación y soporte de Bitrix24, podemos procesar datos personales en tu nombre como procesador de datos. En tales casos:"
+        ],
+        "list": [
+          "Procesamos datos solo según tus instrucciones",
+          "Implementamos medidas de seguridad apropiadas",
+          "Te ayudamos a responder a solicitudes de sujetos de datos",
+          "Te notificamos de cualquier violación de datos",
+          "Cumplimos con los requisitos del RGPD para procesadores"
+        ]
+      },
+      {
+        "id": "transferencias-internacionales",
+        "title": "7. Transferencias Internacionales de Datos",
+        "paragraphs": [
+          "Si transferimos datos personales fuera del Espacio Económico Europeo (EEE), aseguramos que existan salvaguardas apropiadas, como:"
+        ],
+        "list": [
+          "Cláusulas Contractuales Estándar aprobadas por la Comisión Europea",
+          "Decisiones de adecuación de la Comisión Europea",
+          "Otros mecanismos de transferencia reconocidos legalmente"
+        ]
+      },
+      {
+        "id": "notificacion-violacion",
+        "title": "8. Notificación de Violación de Datos",
+        "paragraphs": [
+          "En caso de una violación de datos personales que probablemente resulte en un alto riesgo para tus derechos y libertades, te notificaremos y a la autoridad supervisora relevante sin demora indebida, de acuerdo con los requisitos del RGPD."
+        ]
+      },
+      {
+        "id": "dpo",
+        "title": "9. Oficial de Protección de Datos",
+        "paragraphs": [
+          "Si tienes preguntas o inquietudes sobre nuestras actividades de procesamiento de datos o cumplimiento del RGPD, contáctanos en b24@msite.top."
+        ]
+      },
+      {
+        "id": "autoridad-supervisora",
+        "title": "10. Autoridad Supervisora",
+        "paragraphs": [
+          "Si te encuentras en la UE, tienes derecho a presentar una queja ante tu autoridad local de protección de datos si crees que nuestro procesamiento de tus datos personales viola el RGPD."
+        ]
+      },
+      {
+        "id": "actualizaciones",
+        "title": "11. Actualizaciones de esta Información",
+        "paragraphs": [
+          "Podemos actualizar esta información de cumplimiento del RGPD ocasionalmente para reflejar cambios en nuestras prácticas o requisitos legales. Te notificaremos de cambios significativos."
+        ]
+      },
+      {
+        "id": "contacto",
+        "title": "12. Contáctanos",
+        "paragraphs": [
+          "Para preguntas sobre cumplimiento del RGPD o para ejercer tus derechos, contáctanos:",
+          "M SITE.TOP\nEmail: b24@msite.top\nTeléfono: +34 614 33 27 85"
+        ]
+      }
+    ]
+  }
+}

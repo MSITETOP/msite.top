@@ -1,0 +1,65 @@
+{
+  "ui": {
+    "header": {
+      "logoAlt": "M SITE.TOP",
+      "nav": {
+        "services": "Services",
+        "whyBitrix24": "Why Bitrix24",
+        "about": "About Us",
+        "testimonials": "Testimonials",
+        "cases": "Case Studies",
+        "process": "How We Work",
+        "contact": "Contact",
+        "requestDemo": "Request Demo"
+      },
+      "menuOpen": "Open menu",
+      "menuClose": "Close menu"
+    },
+    "footer": {
+      "columns": {
+        "services": "Services",
+        "company": "Company",
+        "legal": "Legal"
+      },
+      "links": {
+        "installation": "Installation",
+        "customization": "Customization",
+        "support": "Support",
+        "training": "Training",
+        "integration": "Integration",
+        "about": "About Us",
+        "blog": "Blog",
+        "contact": "Contact",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Use",
+        "gdpr": "GDPR"
+      },
+      "partnerBadge": "Bitrix24 Silver Partner",
+      "copyright": "All rights reserved."
+    },
+    "common": {
+      "learnMore": "Learn more",
+      "readMore": "Read more",
+      "viewAll": "View All Articles",
+      "sendRequest": "Send request",
+      "loading": "Loading...",
+      "error": "An error occurred"
+    },
+    "cta": {
+      "sticky": {
+        "text": "Ready to transform your business with Bitrix24?",
+        "primary": "Book Free Consultation",
+        "secondary": "Get Quote"
+      },
+      "service": {
+        "contact": "Contact Us",
+        "learnMore": "Learn more"
+      }
+    },
+    "lang": {
+      "en": "EN",
+      "es": "ES",
+      "switch": "Switch language"
+    }
+  }
+}

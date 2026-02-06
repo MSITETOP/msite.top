@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "title": "Privacy Policy | MSITE.TOP",
+    "description": "Privacy Policy - MSITE.TOP Bitrix24 services. How we collect, use, and protect your personal data.",
+    "keywords": "privacy policy, data protection, GDPR, MSITE.TOP"
+  },
+  "content": {
+    "title": "Privacy Policy",
+    "lastUpdated": "February 2, 2025",
+    "sections": [
+      {
+        "id": "introduction",
+        "title": "1. Introduction",
+        "paragraphs": [
+          "MSITE.TOP (\"we\", \"us\", \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our website and services.",
+          "By using our website or services, you agree to the collection and use of information in accordance with this policy."
+        ]
+      },
+      {
+        "id": "information-we-collect",
+        "title": "2. Information We Collect",
+        "subsections": [
+          {
+            "title": "2.1 Information You Provide",
+            "paragraphs": [
+              "We collect information that you provide directly to us, including:"
+            ],
+            "list": [
+              "Name and contact information (email, phone number, company name)",
+              "Information about your business and requirements",
+              "Messages and communications you send to us",
+              "Any other information you choose to provide"
+            ]
+          },
+          {
+            "title": "2.2 Automatically Collected Information",
+            "paragraphs": [
+              "When you visit our website, we may automatically collect certain information, including:"
+            ],
+            "list": [
+              "IP address and browser type",
+              "Pages visited and time spent on pages",
+              "Referring website addresses",
+              "Device information"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "how-we-use",
+        "title": "3. How We Use Your Information",
+        "paragraphs": [
+          "We use the information we collect to:"
+        ],
+        "list": [
+          "Respond to your inquiries and provide our services",
+          "Send you information about Bitrix24 implementation, customization, and support services",
+          "Improve our website and services",
+          "Comply with legal obligations",
+          "Protect our rights and prevent fraud"
+        ]
+      },
+      {
+        "id": "legal-basis",
+        "title": "4. Legal Basis for Processing (GDPR)",
+        "paragraphs": [
+          "If you are located in the European Economic Area (EEA), we process your personal data based on:"
+        ],
+        "list": [
+          "Consent: When you provide explicit consent for specific processing activities",
+          "Contract: To perform our services and fulfill contractual obligations",
+          "Legitimate interests: To improve our services and communicate with you about relevant services",
+          "Legal obligation: To comply with applicable laws and regulations"
+        ]
+      },
+      {
+        "id": "data-sharing",
+        "title": "5. Data Sharing and Disclosure",
+        "paragraphs": [
+          "We do not sell your personal information. We may share your information with:"
+        ],
+        "list": [
+          "Service providers: Third-party vendors who assist us in operating our website and providing services (e.g., hosting, analytics)",
+          "Business partners: Bitrix24 and other partners necessary to deliver our services",
+          "Legal requirements: When required by law or to protect our rights"
+        ]
+      },
+      {
+        "id": "data-retention",
+        "title": "6. Data Retention",
+        "paragraphs": [
+          "We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law."
+        ]
+      },
+      {
+        "id": "your-rights",
+        "title": "7. Your Rights (GDPR)",
+        "paragraphs": [
+          "If you are located in the EEA, you have the following rights:"
+        ],
+        "list": [
+          "Access: Request a copy of your personal data",
+          "Rectification: Request correction of inaccurate data",
+          "Erasure: Request deletion of your personal data",
+          "Restriction: Request limitation of processing",
+          "Portability: Request transfer of your data to another service",
+          "Objection: Object to processing based on legitimate interests",
+          "Withdraw consent: Withdraw consent at any time"
+        ],
+        "paragraphsAfter": [
+          "To exercise these rights, please contact us at b24@msite.top."
+        ]
+      },
+      {
+        "id": "cookies",
+        "title": "8. Cookies and Tracking Technologies",
+        "paragraphs": [
+          "We use cookies and similar tracking technologies to track activity on our website and store certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent."
+        ]
+      },
+      {
+        "id": "data-security",
+        "title": "9. Data Security",
+        "paragraphs": [
+          "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction."
+        ]
+      },
+      {
+        "id": "international-transfers",
+        "title": "10. International Data Transfers",
+        "paragraphs": [
+          "Your information may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place to protect your data in accordance with this Privacy Policy and applicable data protection laws."
+        ]
+      },
+      {
+        "id": "children-privacy",
+        "title": "11. Children's Privacy",
+        "paragraphs": [
+          "Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children."
+        ]
+      },
+      {
+        "id": "changes",
+        "title": "12. Changes to This Privacy Policy",
+        "paragraphs": [
+          "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the \"Last updated\" date."
+        ]
+      },
+      {
+        "id": "contact",
+        "title": "13. Contact Us",
+        "paragraphs": [
+          "If you have questions about this Privacy Policy, please contact us:",
+          "MSITE.TOP\nEmail: b24@msite.top\nPhone: +34 614 33 27 85"
+        ]
+      }
+    ]
+  }
+}

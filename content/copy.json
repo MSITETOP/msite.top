@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Bitrix24 Implementation & Customization in Europe | M SITE.TOP",
+    "description": "Silver Partner Bitrix24: implementation, CRM customization, automation, and support for EU businesses. Cloud and on-premise. GDPR-ready. Free consultation.",
+    "keywords": "Bitrix24 implementation Europe, Bitrix24 customization, Bitrix24 consultant EU, CRM setup Bitrix24, Bitrix24 support, Bitrix24 Silver Partner"
+  },
+  "header": {
+    "logoAlt": "M SITE.TOP",
+    "nav": {
+      "services": "Services",
+      "about": "About Us",
+      "blog": "Blog",
+      "contact": "Contact",
+      "requestDemo": "Request Demo"
+    }
+  },
+  "hero": {
+    "badge": "Bitrix24 Silver Partner",
+    "title": "Fast Bitrix24 Implementation & Customization for SMBs in Europe",
+    "subtitle": "We align Bitrix24 to your sales and operations so your team works in one system. Go-live in weeks, not months. Cloud or on-premise, GDPR-ready.",
+    "ctaPrimary": "Customize Bitrix24",
+    "ctaSecondary": "Build a Bitrix24 App",
+    "ctaNote": "Support plans available — choose the level you need"
+  },
+  "services": {
+    "title": "What We Do",
+    "subtitle": "Full-cycle Bitrix24: implementation, customization, automation, integrations, and custom development.",
+    "intro": "We adapt Bitrix24 to your processes so your team can work in one place, reduce manual work, and keep every stage transparent.",
+    "items": [
+      {
+        "id": "installation",
+        "title": "Installation & Setup",
+        "description": "We launch Bitrix24 from zero: setup, migration from spreadsheets or other CRMs, security, and permissions. Your team gets a clean, structured workspace from day one.",
+        "features": ["Initial configuration", "Data import and migration", "Security and permissions", "Cloud or on-premise setup"]
+      },
+      {
+        "id": "customization",
+        "title": "Customization",
+        "description": "We shape Bitrix24 around your sales and operations: custom fields, pipelines, roles, and screens. The system matches how your team works, not the other way around.",
+        "features": ["Custom fields and pipelines", "Role-based views", "Process design", "Branded interface"]
+      },
+      {
+        "id": "support",
+        "title": "Technical Support",
+        "description": "Ongoing help when you need it: diagnostics, updates, fixes, and best practices. Support priority and response times depend on your plan.",
+        "features": ["10 hrs/month — €400 (extra €45/hr)", "20 hrs/month — €700 (extra €40/hr)", "100+ hrs — custom terms", "Documentation and tips"]
+      },
+      {
+        "id": "training",
+        "title": "Training & Consulting",
+        "description": "We train your team and align processes so adoption is fast and usage is effective from day one.",
+        "features": ["Team training and workshops", "Process consulting", "Guides and Q&A", "Best practices"]
+      },
+      {
+        "id": "automation",
+        "title": "Automation",
+        "description": "We design automation for sales, marketing, and internal workflows so repetitive tasks run on their own and your team can focus on decisions.",
+        "features": ["Sales and lead automation", "Marketing automation", "Workflow and approvals", "Reports and notifications"]
+      },
+      {
+        "id": "integration",
+        "title": "Integration",
+        "description": "We connect Bitrix24 with ERP, email, telephony, e-commerce, or custom apps via API so data flows in one direction and stays in sync.",
+        "features": ["REST API and webhooks", "ERP and accounting", "Telephony and email", "Legacy system migration"]
+      },
+      {
+        "id": "development",
+        "title": "Application Development",
+        "description": "We build custom modules, mobile extensions, and portal add-ons when standard Bitrix24 features are not enough.",
+        "features": ["Custom Bitrix24 modules", "Mobile and portal apps", "Specialized workflows", "Reporting and dashboards"]
+      }
+    ],
+    "learnMore": "Learn more"
+  },
+  "whyBitrix24": {
+    "title": "Why Bitrix24",
+    "subtitle": "One platform for CRM, projects, and communication",
+    "intro": "Bitrix24 gives you CRM, tasks, projects, chat, and documents in one place. You can start free and scale as you grow, with options that fit European requirements.",
+    "items": [
+      { "title": "All-in-one", "text": "CRM, projects, tasks, chat, and documents in a single workspace." },
+      { "title": "Free plan", "text": "Unlimited users on the free plan so the whole team can try it." },
+      { "title": "Cloud or on-premise", "text": "Choose cloud hosting or install on your own servers in the EU." },
+      { "title": "Automation", "text": "Built-in automation for sales, marketing, and workflows." },
+      { "title": "European presence", "text": "Data centres and support options for European businesses." },
+      { "title": "GDPR-ready", "text": "Tools and settings to help you meet GDPR and data protection needs." }
+    ]
+  },
+  "whyUs": {
+    "title": "Why Work With Us",
+    "subtitle": "Your Bitrix24 partner focused on Europe",
+    "intro": "We are a Bitrix24 Silver Partner focused on fast, structured implementations for SMBs in the EU and UK. We take care of setup, training, and support so you get a system that fits your business.",
+    "items": [
+      { "title": "Silver Partner", "text": "Official Bitrix24 Silver Partner with direct access to updates and support." },
+      { "title": "Speed to value", "text": "We launch quickly with a clear scope so your team starts using the system fast." },
+      { "title": "Europe-focused", "text": "We work in European time zones and understand local compliance and practices." },
+      { "title": "Custom development", "text": "We build custom modules and integrations when standard features are not enough." },
+      { "title": "Full service", "text": "From installation and customization to training and ongoing support." },
+      { "title": "Clear process", "text": "Structured steps from consultation to go-live and beyond." }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Feedback from companies we have helped with Bitrix24",
+    "items": [
+      {
+        "quote": "They rebuilt our CRM and pipelines so our team works in one system. The rollout was fast and adoption was smooth.",
+        "name": "Client",
+        "role": "CEO",
+        "company": "EU services firm"
+      },
+      {
+        "quote": "We needed Bitrix24 to match our sales process. The customization was accurate, and training was clear and practical.",
+        "name": "Client",
+        "role": "Operations Director",
+        "company": "B2B company"
+      },
+      {
+        "quote": "From the first call to go-live, everything was structured and on schedule. We now manage leads, deals, and projects in one place.",
+        "name": "Client",
+        "role": "Project Manager",
+        "company": "Tech business"
+      }
+    ]
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "A clear path from first contact to a running system and ongoing support",
+    "steps": [
+      {
+        "title": "Consultation",
+        "description": "We discuss your goals, current tools, and processes. You get a clear picture of what Bitrix24 can do and what we recommend for your case."
+      },
+      {
+        "title": "Planning",
+        "description": "We agree on scope, timelines, and deliverables. You see the plan before we start so there are no surprises."
+      },
+      {
+        "title": "Implementation",
+        "description": "We set up and customize Bitrix24: data migration, pipelines, automation, and integrations according to the plan."
+      },
+      {
+        "title": "Training",
+        "description": "We train your team so they can use the system confidently from day one. Materials and follow-up Q&A are included."
+      },
+      {
+        "title": "Support",
+        "description": "After go-live we stay available for questions, fixes, and improvements. You can extend support as your needs grow."
+      }
+    ]
+  },
+  "blog": {
+    "title": "From Our Blog",
+    "subtitle": "Practical guides and insights on Bitrix24 and CRM",
+    "viewAll": "View All Articles",
+    "readMore": "Read more",
+    "posts": [
+      {
+        "title": "Bitrix24 Implementation: Best Practices for a Smooth Rollout",
+        "excerpt": "How to plan the rollout, migrate data, and get your team on board without slowing down daily work.",
+        "date": "2025-01-15",
+        "slug": "implementation-best-practices"
+      },
+      {
+        "title": "Automate Your Sales and Marketing in Bitrix24",
+        "excerpt": "Step-by-step ideas for automating leads, follow-ups, and reports so your team can focus on closing deals.",
+        "date": "2025-01-10",
+        "slug": "automation-tips"
+      },
+      {
+        "title": "Integrating Bitrix24 with Your Existing Systems",
+        "excerpt": "Ways to connect Bitrix24 to ERP, telephony, e-commerce, and other tools — and what to consider for European data and GDPR.",
+        "date": "2025-01-05",
+        "slug": "integration-case-studies"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Tell us about your business and what you want to achieve. We usually reply within 1 business day. We’ll reply with a short assessment and options for a free consultation.",
+    "form": {
+      "name": "Your name",
+      "email": "Work email",
+      "phone": "Phone (optional)",
+      "company": "Company name",
+      "message": "What do you need? (Customization / App development / Support plans / Other)",
+      "gdpr": "I have read the Privacy Policy and agree to the processing of my data.",
+      "submit": "Send request"
+    }
+  },
+  "footer": {
+    "description": "M SITE.TOP — Bitrix24 Silver Partner. We implement, customize, and support Bitrix24 for businesses in the EU and UK. Cloud and on-premise. GDPR-aware.",
+    "columns": {
+      "services": "Services",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "links": {
+      "installation": "Installation",
+      "customization": "Customization",
+      "support": "Support",
+      "training": "Training",
+      "about": "About Us",
+      "blog": "Blog",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "gdpr": "GDPR"
+    },
+    "partnerBadge": "Bitrix24 Silver Partner",
+    "copyright": "All rights reserved."
+  }
+}
