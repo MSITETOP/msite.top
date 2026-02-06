@@ -54,23 +54,45 @@
       });
       
       // Обновляем переключатель языка
-      const langLinks = headerElement.querySelectorAll('.lang-switcher__link');
-      langLinks.forEach(link => {
-        const filename = pageInfo.filename;
-        if (pageInfo.isEs) {
-          // Если текущая страница ES, ссылка должна вести на EN версию
+      const langButtons = headerElement.querySelectorAll('.lang-switcher__btn');
+      const filename = pageInfo.filename;
+      
+      langButtons.forEach(btn => {
+        const btnLang = btn.getAttribute('lang') || btn.getAttribute('hreflang');
+        
+        // Определяем URL для каждой кнопки
+        if (btnLang === 'en') {
+          // Кнопка EN должна вести на EN версию
           let enFilename = filename.replace('-es.html', '.html');
           if (enFilename === 'index.html' || enFilename === 'index') {
             enFilename = 'index.html';
           }
-          link.href = enFilename;
-        } else {
-          // Если текущая страница EN, ссылка должна вести на ES версию
+          btn.href = enFilename;
+          
+          // Устанавливаем активное состояние для EN
+          if (!pageInfo.isEs) {
+            btn.classList.add('lang-switcher__btn--active');
+            btn.setAttribute('aria-current', 'true');
+          } else {
+            btn.classList.remove('lang-switcher__btn--active');
+            btn.removeAttribute('aria-current');
+          }
+        } else if (btnLang === 'es') {
+          // Кнопка ES должна вести на ES версию
           let esFilename = filename.replace('.html', '-es.html');
           if (esFilename === 'index-es.html' || filename === 'index.html' || filename === 'index') {
             esFilename = 'index-es.html';
           }
-          link.href = esFilename;
+          btn.href = esFilename;
+          
+          // Устанавливаем активное состояние для ES
+          if (pageInfo.isEs) {
+            btn.classList.add('lang-switcher__btn--active');
+            btn.setAttribute('aria-current', 'true');
+          } else {
+            btn.classList.remove('lang-switcher__btn--active');
+            btn.removeAttribute('aria-current');
+          }
         }
       });
     },
@@ -105,24 +127,48 @@
       }
       
       // Обновляем переключатель языка в footer
-      const langLink = footerElement.querySelector('.footer__lang .lang-switcher__link');
-      if (langLink) {
+      const footerLangButtons = footerElement.querySelectorAll('.footer__lang .lang-switcher__btn');
+      if (footerLangButtons.length > 0) {
         const filename = pageInfo.filename;
-        if (pageInfo.isEs) {
-          // Если текущая страница ES, ссылка должна вести на EN версию
-          let enFilename = filename.replace('-es.html', '.html');
-          if (enFilename === 'index.html' || enFilename === 'index') {
-            enFilename = 'index.html';
+        
+        footerLangButtons.forEach(btn => {
+          const btnLang = btn.getAttribute('lang') || btn.getAttribute('hreflang');
+          
+          // Определяем URL для каждой кнопки
+          if (btnLang === 'en') {
+            // Кнопка EN должна вести на EN версию
+            let enFilename = filename.replace('-es.html', '.html');
+            if (enFilename === 'index.html' || enFilename === 'index') {
+              enFilename = 'index.html';
+            }
+            btn.href = enFilename;
+            
+            // Устанавливаем активное состояние для EN
+            if (!pageInfo.isEs) {
+              btn.classList.add('lang-switcher__btn--active');
+              btn.setAttribute('aria-current', 'true');
+            } else {
+              btn.classList.remove('lang-switcher__btn--active');
+              btn.removeAttribute('aria-current');
+            }
+          } else if (btnLang === 'es') {
+            // Кнопка ES должна вести на ES версию
+            let esFilename = filename.replace('.html', '-es.html');
+            if (esFilename === 'index-es.html' || filename === 'index.html' || filename === 'index') {
+              esFilename = 'index-es.html';
+            }
+            btn.href = esFilename;
+            
+            // Устанавливаем активное состояние для ES
+            if (pageInfo.isEs) {
+              btn.classList.add('lang-switcher__btn--active');
+              btn.setAttribute('aria-current', 'true');
+            } else {
+              btn.classList.remove('lang-switcher__btn--active');
+              btn.removeAttribute('aria-current');
+            }
           }
-          langLink.href = enFilename;
-        } else {
-          // Если текущая страница EN, ссылка должна вести на ES версию
-          let esFilename = filename.replace('.html', '-es.html');
-          if (esFilename === 'index-es.html' || filename === 'index.html' || filename === 'index') {
-            esFilename = 'index-es.html';
-          }
-          langLink.href = esFilename;
-        }
+        });
       }
     },
 
