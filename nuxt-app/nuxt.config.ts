@@ -5,8 +5,8 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/i18n'],
   i18n: {
     locales: [
-      { code: 'en', iso: 'en', name: 'EN', file: 'en.json', isDefault: true },
-      { code: 'es', iso: 'es', name: 'ES', file: 'es.json' }
+      { code: 'en', language: 'en', name: 'EN', file: 'en.json', isDefault: true },
+      { code: 'es', language: 'es', name: 'ES', file: 'es.json' }
     ],
     defaultLocale: 'en',
     langDir: 'locales',
