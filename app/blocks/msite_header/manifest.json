@@ -1,0 +1,55 @@
+{
+  "block": {
+    "name": "Header",
+    "section": ["menu", "header"]
+  },
+  "nodes": {
+    ".landing-block-node-logo": {
+      "name": "Logo",
+      "type": "img"
+    },
+    ".landing-block-node-menu-link": {
+      "name": "Menu item",
+      "type": "link"
+    },
+    ".landing-block-node-lang-link": {
+      "name": "Language link",
+      "type": "link"
+    },
+    ".landing-block-node-cta-text": {
+      "name": "CTA button text",
+      "type": "text"
+    },
+    ".landing-block-node-cta-link": {
+      "name": "CTA button link",
+      "type": "link"
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default-wo-background"]
+    },
+    "nodes": {
+      ".header": {
+        "name": "Header container",
+        "type": ["box", "paddings"]
+      },
+      ".landing-block-node-menu-link": {
+        "name": "Menu link",
+        "type": ["typo-link", "navbar"]
+      },
+      ".landing-block-node-lang-link": {
+        "name": "Language link",
+        "type": ["typo-link"]
+      },
+      ".landing-block-node-cta-link": {
+        "name": "CTA button",
+        "type": ["button"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "/assets/styles.css"    ]
+  }
+}
