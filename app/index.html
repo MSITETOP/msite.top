@@ -267,28 +267,52 @@
         // Удаляем block из манифеста, так как он не нужен в manifest (только в fields)
         const { block, ...manifestWithoutBlock } = manifest;
 
-        // Формируем финальную структуру данных
-        const blockData = {
-          code: info.code,
-          fields: fields,
-          manifest: manifestWithoutBlock
-        };
-
-        // Регистрируем блок через Bitrix24 API
+        // Сначала проверяем содержимое блока через checkcontent
         BX24.callMethod(
-          'landing.repo.register',
-          blockData,
-          function(result) {
-            button.disabled = false;
-            button.textContent = originalText;
-
-            if (result.error()) {
-              showError(`Error registering block "${blockCode}": ${result.error()}`);
-              console.error('Registration error:', result.error());
-            } else {
-              console.info('Block registered successfully:', result.data());
-              showSuccess(`Block "${blockCode}" has been successfully registered in Bitrix24!`);
+          'landing.repo.checkcontent',
+          {
+            code: info.code,
+            content: content
+          },
+          function(checkResult) {
+            if (checkResult.error()) {
+              button.disabled = false;
+              button.textContent = originalText;
+              showError(`Error checking content for block "${blockCode}": ${checkResult.error()}`);
+              console.error('Content check error:', checkResult.error());
+              return;
             }
+
+            // Используем проверенное содержимое из результата checkcontent
+            const checkedContent = checkResult.data()?.content || content;
+
+            // Обновляем CONTENT в fields с проверенным содержимым
+            fields.CONTENT = checkedContent;
+
+            // Формируем финальную структуру данных
+            const blockData = {
+              code: info.code,
+              fields: fields,
+              manifest: manifestWithoutBlock
+            };
+
+            // Регистрируем блок через Bitrix24 API
+            BX24.callMethod(
+              'landing.repo.register',
+              blockData,
+              function(result) {
+                button.disabled = false;
+                button.textContent = originalText;
+
+                if (result.error()) {
+                  showError(`Error registering block "${blockCode}": ${result.error()}`);
+                  console.error('Registration error:', result.error());
+                } else {
+                  console.info('Block registered successfully:', result.data());
+                  showSuccess(`Block "${blockCode}" has been successfully registered in Bitrix24!`);
+                }
+              }
+            );
           }
         );
       } catch (error) {
