@@ -220,11 +220,6 @@
 
     // Добавление блока
     async function addBlock(blockCode, button) {
-      if (!window.BX24) {
-        showError('Bitrix24 API is not available. Please run this page in Bitrix24 context.');
-        return;
-      }
-
       try {
         // Показываем индикатор загрузки
         const originalText = button.textContent;
@@ -289,11 +284,6 @@
 
     // Удаление блока
     function removeBlock(blockCode, button) {
-      if (!window.BX24) {
-        showError('Bitrix24 API is not available. Please run this page in Bitrix24 context.');
-        return;
-      }
-
       if (!confirm(`Remove block "${blockCode}" from Bitrix24 repository?`)) {
         return;
       }
@@ -320,24 +310,12 @@
       );
     }
 
-    // Проверка доступности Bitrix24 API
-    function checkBitrix24API() {
-      if (!window.BX24) {
-        showError('Bitrix24 API (BX24) is not available. This page must be run in Bitrix24 context.');
-        return false;
-      }
-      return true;
-    }
-
     // Инициализация при загрузке страницы
     document.addEventListener('DOMContentLoaded', function() {
-      if (checkBitrix24API()) {
         loadBlocks();
-      } else {
-        document.getElementById('loading').style.display = 'none';
-      }
     });
   </script>
+  <script src="/BX24.js"></script>
 </body>
 
 </html>
