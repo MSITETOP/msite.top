@@ -1,0 +1,160 @@
+<!-- БЛОК 1: Header (Шапка сайта) - Готовый код для Bitrix24 Sites -->
+<!-- Скопируйте этот код в блок "HTML код" или "Кастомный HTML" в Bitrix24 Sites -->
+
+<header class="msite-header" style="position: sticky; top: 0; z-index: 100; background: #ffffff; border-bottom: 1px solid #e5e5e5;">
+  <div style="max-width: 1120px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: 24px; flex-wrap: wrap;">
+    
+    <!-- Логотип -->
+    <a href="#hero" style="flex-shrink: 0; text-decoration: none;">
+      <img src="assets/logo.png" alt="MSITE.TOP" style="width: 140px; height: 44px; object-fit: contain; display: block;">
+    </a>
+    
+    <!-- Гамбургер для мобильных (скрыт на десктопе) -->
+    <input type="checkbox" id="msite-mobile-menu-toggle" style="display: none;">
+    <label for="msite-mobile-menu-toggle" class="msite-burger" style="display: none; flex-direction: column; justify-content: center; gap: 5px; width: 40px; height: 40px; padding: 8px; background: none; border: none; cursor: pointer; border-radius: 6px;">
+      <span style="display: block; width: 100%; height: 2px; background: #000000; border-radius: 1px; transition: all 0.3s;"></span>
+      <span style="display: block; width: 100%; height: 2px; background: #000000; border-radius: 1px; transition: all 0.3s;"></span>
+      <span style="display: block; width: 100%; height: 2px; background: #000000; border-radius: 1px; transition: all 0.3s;"></span>
+    </label>
+    
+    <!-- Навигация -->
+    <nav class="msite-nav" style="flex: 1; display: flex; align-items: center; gap: 32px;">
+      <ul style="display: flex; align-items: center; gap: 32px; list-style: none; margin: 0; padding: 0; flex-wrap: wrap;">
+        <li><a href="#services" style="color: #000000; font-weight: 500; text-decoration: none; font-family: 'Inter', system-ui, -apple-system, sans-serif; transition: color 0.2s;">Services</a></li>
+        <li><a href="#why-bitrix24" style="color: #000000; font-weight: 500; text-decoration: none; font-family: 'Inter', system-ui, -apple-system, sans-serif; transition: color 0.2s;">Why Bitrix24</a></li>
+        <li><a href="#why-us" style="color: #000000; font-weight: 500; text-decoration: none; font-family: 'Inter', system-ui, -apple-system, sans-serif; transition: color 0.2s;">About Us</a></li>
+        <li><a href="#process" style="color: #000000; font-weight: 500; text-decoration: none; font-family: 'Inter', system-ui, -apple-system, sans-serif; transition: color 0.2s;">How We Work</a></li>
+        <li><a href="#contact" style="color: #000000; font-weight: 500; text-decoration: none; font-family: 'Inter', system-ui, -apple-system, sans-serif; transition: color 0.2s;">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Правая часть: переключатель языка и кнопка -->
+    <div class="msite-header-right" style="display: flex; align-items: center; gap: 16px; flex-shrink: 0;">
+      <!-- Переключатель языка (десктоп) -->
+      <div class="msite-lang-switcher msite-lang-switcher-desktop" style="display: inline-flex; align-items: center; gap: 0; font-size: 14px; font-weight: 500; background: #f5f5f5; border-radius: 12px; padding: 2px;">
+        <a href="index.html" class="msite-lang-btn msite-lang-btn-active" style="display: inline-flex; align-items: center; justify-content: center; padding: 2px 6px; color: #CA2F5D; text-decoration: none; border-radius: 10px; min-width: 40px; background: #fff; font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: all 0.2s;">EN</a>
+        <a href="index-es.html" class="msite-lang-btn" style="display: inline-flex; align-items: center; justify-content: center; padding: 2px 6px; color: #000000; text-decoration: none; border-radius: 10px; min-width: 40px; background: transparent; transition: all 0.2s;">ES</a>
+      </div>
+      
+      <!-- CTA кнопка (десктоп) -->
+      <a href="#contact" class="msite-cta msite-cta-desktop" style="display: inline-flex; align-items: center; justify-content: center; padding: 8px 24px; background: #CA2F5D; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 500; font-family: 'Inter', system-ui, -apple-system, sans-serif; transition: background 0.2s; white-space: nowrap;">Request Demo</a>
+    </div>
+    
+  </div>
+  
+  <!-- Мобильное меню (скрыто по умолчанию) -->
+  <nav class="msite-mobile-nav" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: #ffffff; border-bottom: 1px solid #e5e5e5; padding: 16px 24px;">
+    <ul style="display: flex; flex-direction: column; gap: 16px; list-style: none; margin: 0; padding: 0;">
+      <li><a href="#services" style="color: #000000; font-weight: 500; text-decoration: none; font-family: 'Inter', system-ui, -apple-system, sans-serif; display: block; padding: 8px 0;">Services</a></li>
+      <li><a href="#why-bitrix24" style="color: #000000; font-weight: 500; text-decoration: none; font-family: 'Inter', system-ui, -apple-system, sans-serif; display: block; padding: 8px 0;">Why Bitrix24</a></li>
+      <li><a href="#why-us" style="color: #000000; font-weight: 500; text-decoration: none; font-family: 'Inter', system-ui, -apple-system, sans-serif; display: block; padding: 8px 0;">About Us</a></li>
+      <li><a href="#process" style="color: #000000; font-weight: 500; text-decoration: none; font-family: 'Inter', system-ui, -apple-system, sans-serif; display: block; padding: 8px 0;">How We Work</a></li>
+      <li><a href="#contact" style="color: #000000; font-weight: 500; text-decoration: none; font-family: 'Inter', system-ui, -apple-system, sans-serif; display: block; padding: 8px 0;">Contact</a></li>
+    </ul>
+    <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid #e5e5e5;">
+      <div class="msite-lang-switcher-mobile" style="display: inline-flex; align-items: center; gap: 0; font-size: 14px; font-weight: 500; background: #f5f5f5; border-radius: 12px; padding: 2px; margin-bottom: 16px;">
+        <a href="index.html" class="msite-lang-btn msite-lang-btn-active" style="display: inline-flex; align-items: center; justify-content: center; padding: 2px 6px; color: #CA2F5D; text-decoration: none; border-radius: 10px; min-width: 40px; background: #fff; font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">EN</a>
+        <a href="index-es.html" class="msite-lang-btn" style="display: inline-flex; align-items: center; justify-content: center; padding: 2px 6px; color: #000000; text-decoration: none; border-radius: 10px; min-width: 40px; background: transparent;">ES</a>
+      </div>
+      <a href="#contact" class="msite-cta-mobile" style="display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; background: #CA2F5D; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 500; font-family: 'Inter', system-ui, -apple-system, sans-serif; width: 100%; text-align: center;">Request Demo</a>
+    </div>
+  </nav>
+</header>
+
+<style>
+/* Стили для Header */
+.msite-header {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.msite-header nav a:hover {
+  color: #CA2F5D;
+  text-decoration: none;
+}
+
+.msite-lang-btn:hover {
+  background: rgba(0, 0, 0, 0.05) !important;
+  text-decoration: none;
+}
+
+.msite-lang-btn-active:hover {
+  background: #fff !important;
+}
+
+.msite-cta:hover,
+.msite-cta-mobile:hover {
+  background: #a8264b;
+  text-decoration: none;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .msite-header {
+    position: relative;
+  }
+  
+  .msite-nav {
+    display: none !important;
+  }
+  
+  .msite-lang-switcher-desktop,
+  .msite-cta-desktop {
+    display: none !important;
+  }
+  
+  .msite-burger {
+    display: flex !important;
+  }
+  
+  #msite-mobile-menu-toggle:checked ~ .msite-mobile-nav {
+    display: block !important;
+  }
+  
+  #msite-mobile-menu-toggle:checked ~ .msite-burger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #msite-mobile-menu-toggle:checked ~ .msite-burger span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #msite-mobile-menu-toggle:checked ~ .msite-burger span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+}
+
+/* Десктоп версия */
+@media (min-width: 769px) {
+  .msite-burger,
+  .msite-mobile-nav {
+    display: none !important;
+  }
+}
+</style>
+
+<script>
+// Простая логика для мобильного меню (если нужно)
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('msite-mobile-menu-toggle');
+  const mobileNav = document.querySelector('.msite-mobile-nav');
+  
+  if (toggle && mobileNav) {
+    toggle.addEventListener('change', function() {
+      if (this.checked) {
+        mobileNav.style.display = 'block';
+      } else {
+        mobileNav.style.display = 'none';
+      }
+    });
+    
+    // Закрытие меню при клике на ссылку
+    const mobileLinks = mobileNav.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        toggle.checked = false;
+        mobileNav.style.display = 'none';
+      });
+    });
+  }
+});
+</script>

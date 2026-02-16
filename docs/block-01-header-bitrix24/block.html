@@ -1,0 +1,132 @@
+<!-- БЛОК 1: Header (Шапка сайта) для Bitrix24 Sites -->
+<!-- Структура блока с редактируемыми узлами -->
+
+<header class="landing-block g-pt-15 g-pb-15 g-bg-white" style="position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #e5e5e5;">
+	<div class="container">
+		<div class="landing-block-node-container g-flex-row g-flex-nowrap g-justify-content-between g-align-items-center">
+			
+			<!-- Логотип -->
+			<a href="#hero" class="landing-block-node-logo g-flex-shrink-0">
+				<img src="assets/logo.png" alt="MSITE.TOP" class="landing-block-node-img" style="width: 140px; height: 44px; object-fit: contain;">
+			</a>
+			
+			<!-- Гамбургер для мобильных -->
+			<input type="checkbox" id="msite-mobile-menu-toggle" class="landing-block-node-menu-toggle" style="display: none;">
+			<label for="msite-mobile-menu-toggle" class="landing-block-node-menu-burger g-d-none" style="flex-direction: column; justify-content: center; gap: 5px; width: 40px; height: 40px; padding: 8px; background: none; border: none; cursor: pointer; border-radius: 6px;">
+				<span style="display: block; width: 100%; height: 2px; background: #000000; border-radius: 1px; transition: all 0.3s;"></span>
+				<span style="display: block; width: 100%; height: 2px; background: #000000; border-radius: 1px; transition: all 0.3s;"></span>
+				<span style="display: block; width: 100%; height: 2px; background: #000000; border-radius: 1px; transition: all 0.3s;"></span>
+			</label>
+			
+			<!-- Навигация -->
+			<nav class="landing-block-node-menu landing-block-node-menu-nav g-flex-grow-1">
+				<ul class="landing-block-node-menu-list g-flex-row g-flex-wrap g-align-items-center" style="list-style: none; margin: 0; padding: 0; gap: 32px;">
+					<li class="landing-block-node-menu-item">
+						<a href="#services" class="landing-block-node-menu-link">Services</a>
+					</li>
+					<li class="landing-block-node-menu-item">
+						<a href="#why-bitrix24" class="landing-block-node-menu-link">Why Bitrix24</a>
+					</li>
+					<li class="landing-block-node-menu-item">
+						<a href="#why-us" class="landing-block-node-menu-link">About Us</a>
+					</li>
+					<li class="landing-block-node-menu-item">
+						<a href="#process" class="landing-block-node-menu-link">How We Work</a>
+					</li>
+					<li class="landing-block-node-menu-item">
+						<a href="#contact" class="landing-block-node-menu-link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<!-- Правая часть: переключатель языка и кнопка -->
+			<div class="landing-block-node-header-right g-flex-row g-align-items-center g-flex-shrink-0" style="gap: 16px;">
+				<!-- Переключатель языка (десктоп) -->
+				<div class="landing-block-node-lang-switcher landing-block-node-lang-switcher-desktop" style="display: inline-flex; align-items: center; gap: 0; font-size: 14px; font-weight: 500; background: #f5f5f5; border-radius: 12px; padding: 2px;">
+					<a href="index.html" class="landing-block-node-lang-btn landing-block-node-lang-btn-active" style="display: inline-flex; align-items: center; justify-content: center; padding: 2px 6px; color: #CA2F5D; text-decoration: none; border-radius: 10px; min-width: 40px; background: #fff; font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">EN</a>
+					<a href="index-es.html" class="landing-block-node-lang-btn" style="display: inline-flex; align-items: center; justify-content: center; padding: 2px 6px; color: #000000; text-decoration: none; border-radius: 10px; min-width: 40px; background: transparent;">ES</a>
+				</div>
+				
+				<!-- CTA кнопка (десктоп) -->
+				<a href="#contact" class="landing-block-node-button landing-block-node-button-desktop g-btn g-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; padding: 8px 24px; background: #CA2F5D; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 500; white-space: nowrap;">Request Demo</a>
+			</div>
+			
+		</div>
+		
+		<!-- Мобильное меню (скрыто по умолчанию) -->
+		<nav class="landing-block-node-menu landing-block-node-menu-mobile g-d-none" style="position: absolute; top: 100%; left: 0; right: 0; background: #ffffff; border-bottom: 1px solid #e5e5e5; padding: 16px 24px;">
+			<ul class="landing-block-node-menu-list-mobile" style="display: flex; flex-direction: column; gap: 16px; list-style: none; margin: 0; padding: 0;">
+				<li class="landing-block-node-menu-item-mobile">
+					<a href="#services" class="landing-block-node-menu-link-mobile" style="color: #000000; font-weight: 500; text-decoration: none; display: block; padding: 8px 0;">Services</a>
+				</li>
+				<li class="landing-block-node-menu-item-mobile">
+					<a href="#why-bitrix24" class="landing-block-node-menu-link-mobile" style="color: #000000; font-weight: 500; text-decoration: none; display: block; padding: 8px 0;">Why Bitrix24</a>
+				</li>
+				<li class="landing-block-node-menu-item-mobile">
+					<a href="#why-us" class="landing-block-node-menu-link-mobile" style="color: #000000; font-weight: 500; text-decoration: none; display: block; padding: 8px 0;">About Us</a>
+				</li>
+				<li class="landing-block-node-menu-item-mobile">
+					<a href="#process" class="landing-block-node-menu-link-mobile" style="color: #000000; font-weight: 500; text-decoration: none; display: block; padding: 8px 0;">How We Work</a>
+				</li>
+				<li class="landing-block-node-menu-item-mobile">
+					<a href="#contact" class="landing-block-node-menu-link-mobile" style="color: #000000; font-weight: 500; text-decoration: none; display: block; padding: 8px 0;">Contact</a>
+				</li>
+			</ul>
+			<div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid #e5e5e5;">
+				<div class="landing-block-node-lang-switcher-mobile" style="display: inline-flex; align-items: center; gap: 0; font-size: 14px; font-weight: 500; background: #f5f5f5; border-radius: 12px; padding: 2px; margin-bottom: 16px;">
+					<a href="index.html" class="landing-block-node-lang-btn-mobile landing-block-node-lang-btn-active" style="display: inline-flex; align-items: center; justify-content: center; padding: 2px 6px; color: #CA2F5D; text-decoration: none; border-radius: 10px; min-width: 40px; background: #fff; font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">EN</a>
+					<a href="index-es.html" class="landing-block-node-lang-btn-mobile" style="display: inline-flex; align-items: center; justify-content: center; padding: 2px 6px; color: #000000; text-decoration: none; border-radius: 10px; min-width: 40px; background: transparent;">ES</a>
+				</div>
+				<a href="#contact" class="landing-block-node-button-mobile g-btn g-btn-primary" style="display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; background: #CA2F5D; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 500; width: 100%; text-align: center;">Request Demo</a>
+			</div>
+		</nav>
+	</div>
+</header>
+
+<style>
+/* Стили для Header */
+.landing-block-node-menu-link:hover {
+	color: #CA2F5D;
+	text-decoration: none;
+}
+
+.landing-block-node-lang-btn:hover {
+	background: rgba(0, 0, 0, 0.05) !important;
+	text-decoration: none;
+}
+
+.landing-block-node-lang-btn-active:hover {
+	background: #fff !important;
+}
+
+.landing-block-node-button:hover,
+.landing-block-node-button-mobile:hover {
+	background: #a8264b;
+	text-decoration: none;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+	.landing-block-node-menu-nav,
+	.landing-block-node-lang-switcher-desktop,
+	.landing-block-node-button-desktop {
+		display: none !important;
+	}
+	
+	.landing-block-node-menu-burger {
+		display: flex !important;
+	}
+	
+	.landing-block-node-menu-toggle:checked ~ .landing-block-node-menu-mobile {
+		display: block !important;
+	}
+}
+
+/* Десктоп версия */
+@media (min-width: 769px) {
+	.landing-block-node-menu-burger,
+	.landing-block-node-menu-mobile {
+		display: none !important;
+	}
+}
+</style>
