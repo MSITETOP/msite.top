@@ -1722,3 +1722,7 @@ transform: ranslateY(20px) translateX(40px); /* Движение вниз */
 transform: translateY(0) translateX(0); /* Возврат в центр */
   }
 }
+
+.bitrix-footer {
+  display: none;
+}
