@@ -2,6 +2,7 @@
   "code": "msite_header",
   "fields": {
     "NAME": "Header",
-    "DESCRIPTION": "Site header with logo, navigation menu, language switcher (EN/ES), and CTA button. Sticky position, mobile hamburger menu for screens < 768px."
+    "DESCRIPTION": "Site header with logo, navigation menu, language switcher (EN/ES), and CTA button. Sticky position, mobile hamburger menu for screens < 768px.",
+    "PREVIEW": "/assets/logo.png"
   }
 }

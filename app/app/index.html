@@ -241,20 +241,37 @@
         const manifest = await manifestResponse.json();
         const content = await contentResponse.text();
 
-        // Формируем данные для регистрации блока
-        // Объединяем данные из info.json с манифестом
+        // Формируем данные для регистрации блока согласно документации Bitrix24
+        // Структура: code на верхнем уровне, fields с NAME/DESCRIPTION/CONTENT, manifest отдельно
+        
+        // Извлекаем секции из манифеста, если они есть
+        const sections = manifest.block?.section 
+          ? Array.isArray(manifest.block.section) 
+            ? manifest.block.section.join(',') 
+            : manifest.block.section
+          : '';
+
+        // Формируем объект fields
+        const fields = {
+          NAME: info.fields?.NAME || manifest.block?.name || info.code,
+          DESCRIPTION: info.fields?.DESCRIPTION || manifest.block?.description || '',
+          PREVIEW: info.fields?.PREVIEW || manifest.block?.preview || '',
+          CONTENT: content
+        };
+
+        // Добавляем секции, если они есть
+        if (sections) {
+          fields.SECTIONS = sections;
+        }
+
+        // Удаляем block из манифеста, так как он не нужен в manifest (только в fields)
+        const { block, ...manifestWithoutBlock } = manifest;
+
+        // Формируем финальную структуру данных
         const blockData = {
           code: info.code,
-          manifest: {
-            ...manifest,
-            // Добавляем поля из info.json в манифест, если они нужны
-            block: {
-              ...manifest.block,
-              name: info.fields?.NAME || manifest.block?.name || info.code,
-              description: info.fields?.DESCRIPTION || manifest.block?.description || ''
-            }
-          },
-          content: content
+          fields: fields,
+          manifest: manifestWithoutBlock
         };
 
         // Регистрируем блок через Bitrix24 API

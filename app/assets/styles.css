@@ -1614,3 +1614,111 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
     right: 4px;
   }
 }
+/* Контейнер для header */
+.msite-header {
+  position: relative;
+  width: 100%;
+  height: 800px; /* или желаемая высота */
+  overflow: hidden;
+  background-color: #fff; /* Задний цвет на случай, если изображения не загрузятся */
+}
+
+.msite-header a:hover {
+  text-decoration: none;
+}
+
+/* Двигающийся фон */
+.msite-header .msite-header-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/assets/header-bg.png') repeat 0 0;
+-webkit-animation: bg-scrolling-reverse 10s infinite;
+-moz-animation: bg-scrolling-reverse 10s infinite;
+-o-animation: bg-scrolling-reverse 10s infinite;
+animation: bg-scrolling-reverse 10s infinite;
+-webkit-animation-timing-function: linear;
+-moz-animation-timing-function: linear;
+-o-animation-timing-function: linear;
+animation-timing-function: linear;
+}
+
+@-webkit-keyframes bg-scrolling-reverse {
+100% {
+  background-position: -1920px 0;
+}
+}
+@-moz-keyframes bg-scrolling-reverse {
+100% {
+  background-position: -1920px 0;
+}
+}
+@-o-keyframes bg-scrolling-reverse {
+100% {
+  background-position: -1920px 0;
+}
+}
+@keyframes bg-scrolling-reverse {
+100% {
+  background-position: -1920px 0;
+}
+}
+@-webkit-keyframes bg-scrolling {
+0% {
+  background-position: -1920px 0;
+}
+}
+@-moz-keyframes bg-scrolling {
+0% {
+  background-position: -1920px 0;
+}
+}
+@-o-keyframes bg-scrolling {
+0% {
+  background-position: -1920px 0;
+}
+}
+@keyframes bg-scrolling {
+0% {
+  background-position: -1920px 0;
+}
+}
+
+@keyframes msiteMoveBg {
+  0% {
+transform: translateX(0);
+  }
+  100% {
+transform: translateX(-50%);
+  }
+}
+
+/* Фиксированный элемент по центру */
+.msite-header .msite-header-man {
+  position: absolute;
+  top: 220px;
+  left: 150px;
+  background: url('/assets/header-man.png') no-repeat center;
+  width: 250px; /* Задайте размер */
+  height: 201px; /* Задайте размер */
+  background-size: contain;
+  animation: msiteWave 5s ease-in-out infinite;
+}
+@keyframes msiteWave {
+  0% {
+transform: translateY(0) translateX(0); /* Начальная позиция */
+  }
+  25% {
+transform: translateY(-20px) translateX(-40px); /* Движение вверх */
+  }
+  50% {
+transform: translateY(0) translateX(0); /* Возврат в центр */
+  }
+  75% {
+transform: ranslateY(20px) translateX(40px); /* Движение вниз */
+  }
+  100% {
+transform: translateY(0) translateX(0); /* Возврат в центр */
+  }
+}
