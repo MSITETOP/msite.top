@@ -3,6 +3,6 @@
   "fields": {
     "NAME": "Header",
     "DESCRIPTION": "Site header with logo, navigation menu, language switcher (EN/ES), and CTA button. Sticky position, mobile hamburger menu for screens < 768px.",
-    "PREVIEW": "assets/logo.png"
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/logo.png"
   }
 }
