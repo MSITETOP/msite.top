@@ -116,6 +116,20 @@
       padding: 40px;
       color: #999;
     }
+
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .success {
+      background: #d4edda;
+      color: #155724;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      border: 1px solid #c3e6cb;
+    }
   </style>
 </head>
 
@@ -151,6 +165,16 @@
       errorContainer.innerHTML = `<div class="error">${message}</div>`;
     }
 
+    // Отображение успешного сообщения
+    function showSuccess(message) {
+      const errorContainer = document.getElementById('error-container');
+      errorContainer.innerHTML = `<div class="success">${message}</div>`;
+      // Автоматически скрываем сообщение через 5 секунд
+      setTimeout(() => {
+        errorContainer.innerHTML = '';
+      }, 5000);
+    }
+
     // Рендеринг списка блоков
     function renderBlocks() {
       const loadingEl = document.getElementById('loading');
@@ -168,37 +192,151 @@
       blocks.forEach((blockCode, index) => {
         const li = document.createElement('li');
         li.className = 'block-item';
-        li.innerHTML = `
-          <span class="block-code">${blockCode}</span>
-          <div class="block-actions">
-            <button class="btn btn-add" onclick="addBlock('${blockCode}')">Add</button>
-            <button class="btn btn-remove" onclick="removeBlock(${index})">Remove</button>
-          </div>
-        `;
+        
+        const addButton = document.createElement('button');
+        addButton.className = 'btn btn-add';
+        addButton.textContent = 'Add';
+        addButton.onclick = () => addBlock(blockCode, addButton);
+        
+        const removeButton = document.createElement('button');
+        removeButton.className = 'btn btn-remove';
+        removeButton.textContent = 'Remove';
+        removeButton.onclick = () => removeBlock(blockCode, removeButton);
+        
+        const blockCodeSpan = document.createElement('span');
+        blockCodeSpan.className = 'block-code';
+        blockCodeSpan.textContent = blockCode;
+        
+        const actionsDiv = document.createElement('div');
+        actionsDiv.className = 'block-actions';
+        actionsDiv.appendChild(addButton);
+        actionsDiv.appendChild(removeButton);
+        
+        li.appendChild(blockCodeSpan);
+        li.appendChild(actionsDiv);
         listEl.appendChild(li);
       });
     }
 
     // Добавление блока
-    function addBlock(blockCode) {
-      console.log('Add block:', blockCode);
-      // TODO: Реализовать логику добавления блока в Bitrix24
-      alert(`Adding block: ${blockCode}\n\nThis functionality needs to be implemented with Bitrix24 API.`);
-    }
+    async function addBlock(blockCode, button) {
+      if (!window.BX24) {
+        showError('Bitrix24 API is not available. Please run this page in Bitrix24 context.');
+        return;
+      }
 
-    // Удаление блока
-    function removeBlock(index) {
-      if (confirm(`Remove block "${blocks[index]}"?`)) {
-        blocks.splice(index, 1);
-        renderBlocks();
-        // TODO: Сохранить изменения в blocks.json через API или файловую систему
-        console.log('Removed block at index:', index);
-        console.log('Updated blocks:', blocks);
+      try {
+        // Показываем индикатор загрузки
+        const originalText = button.textContent;
+        button.disabled = true;
+        button.textContent = 'Loading...';
+
+        // Загружаем файлы блока
+        const [infoResponse, manifestResponse, contentResponse] = await Promise.all([
+          fetch(`blocks/${blockCode}/info.json`),
+          fetch(`blocks/${blockCode}/manifest.json`),
+          fetch(`blocks/${blockCode}/block.html`)
+        ]);
+
+        if (!infoResponse.ok || !manifestResponse.ok || !contentResponse.ok) {
+          throw new Error(`Failed to load block files for ${blockCode}`);
+        }
+
+        const info = await infoResponse.json();
+        const manifest = await manifestResponse.json();
+        const content = await contentResponse.text();
+
+        // Формируем данные для регистрации блока
+        // Объединяем данные из info.json с манифестом
+        const blockData = {
+          code: info.code,
+          manifest: {
+            ...manifest,
+            // Добавляем поля из info.json в манифест, если они нужны
+            block: {
+              ...manifest.block,
+              name: info.fields?.NAME || manifest.block?.name || info.code,
+              description: info.fields?.DESCRIPTION || manifest.block?.description || ''
+            }
+          },
+          content: content
+        };
+
+        // Регистрируем блок через Bitrix24 API
+        BX24.callMethod(
+          'landing.repo.register',
+          blockData,
+          function(result) {
+            button.disabled = false;
+            button.textContent = originalText;
+
+            if (result.error()) {
+              showError(`Error registering block "${blockCode}": ${result.error()}`);
+              console.error('Registration error:', result.error());
+            } else {
+              console.info('Block registered successfully:', result.data());
+              showSuccess(`Block "${blockCode}" has been successfully registered in Bitrix24!`);
+            }
+          }
+        );
+      } catch (error) {
+        showError(`Error adding block "${blockCode}": ${error.message}`);
+        console.error('Add block error:', error);
+        button.disabled = false;
+        button.textContent = 'Add';
       }
     }
 
+    // Удаление блока
+    function removeBlock(blockCode, button) {
+      if (!window.BX24) {
+        showError('Bitrix24 API is not available. Please run this page in Bitrix24 context.');
+        return;
+      }
+
+      if (!confirm(`Remove block "${blockCode}" from Bitrix24 repository?`)) {
+        return;
+      }
+
+      const originalText = button.textContent;
+      button.disabled = true;
+      button.textContent = 'Removing...';
+
+      BX24.callMethod(
+        'landing.repo.unregister',
+        { code: blockCode },
+        function(result) {
+          button.disabled = false;
+          button.textContent = originalText;
+
+          if (result.error()) {
+            showError(`Error removing block "${blockCode}": ${result.error()}`);
+            console.error('Removal error:', result.error());
+          } else {
+            console.info('Block removed successfully:', result.data());
+            showSuccess(`Block "${blockCode}" has been successfully removed from Bitrix24 repository!`);
+          }
+        }
+      );
+    }
+
+    // Проверка доступности Bitrix24 API
+    function checkBitrix24API() {
+      if (!window.BX24) {
+        showError('Bitrix24 API (BX24) is not available. This page must be run in Bitrix24 context.');
+        return false;
+      }
+      return true;
+    }
+
     // Инициализация при загрузке страницы
-    document.addEventListener('DOMContentLoaded', loadBlocks);
+    document.addEventListener('DOMContentLoaded', function() {
+      if (checkBitrix24API()) {
+        loadBlocks();
+      } else {
+        document.getElementById('loading').style.display = 'none';
+      }
+    });
   </script>
 </body>
 
