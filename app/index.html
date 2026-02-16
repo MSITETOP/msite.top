@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blocks Installer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #CA2F5D;
+      font-size: 28px;
+    }
+
+    .blocks-list {
+      list-style: none;
+    }
+
+    .block-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      margin-bottom: 10px;
+      background: #f8f8f8;
+      border-radius: 6px;
+      border: 1px solid #e0e0e0;
+      transition: all 0.2s;
+    }
+
+    .block-item:hover {
+      background: #f0f0f0;
+      border-color: #CA2F5D;
+    }
+
+    .block-code {
+      font-family: 'Courier New', monospace;
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+      flex: 1;
+    }
+
+    .block-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .btn-add {
+      background: #CA2F5D;
+      color: white;
+    }
+
+    .btn-add:hover {
+      background: #b0284d;
+    }
+
+    .btn-remove {
+      background: #dc3545;
+      color: white;
+    }
+
+    .btn-remove:hover {
+      background: #c82333;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: #666;
+    }
+
+    .error {
+      background: #fee;
+      color: #c33;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      border: 1px solid #fcc;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 40px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Blocks Installer</h1>
+    <div id="error-container"></div>
+    <div id="loading" class="loading">Loading blocks...</div>
+    <ul id="blocks-list" class="blocks-list" style="display: none;"></ul>
+  </div>
+
+  <script>
+    let blocks = [];
+
+    // Загрузка списка блоков из blocks.json
+    async function loadBlocks() {
+      try {
+        const response = await fetch('blocks.json');
+        if (!response.ok) {
+          throw new Error(`Failed to load blocks.json: ${response.status}`);
+        }
+        blocks = await response.json();
+        renderBlocks();
+      } catch (error) {
+        showError(`Error loading blocks: ${error.message}`);
+        document.getElementById('loading').style.display = 'none';
+      }
+    }
+
+    // Отображение ошибки
+    function showError(message) {
+      const errorContainer = document.getElementById('error-container');
+      errorContainer.innerHTML = `<div class="error">${message}</div>`;
+    }
+
+    // Рендеринг списка блоков
+    function renderBlocks() {
+      const loadingEl = document.getElementById('loading');
+      const listEl = document.getElementById('blocks-list');
+
+      loadingEl.style.display = 'none';
+      listEl.style.display = 'block';
+      listEl.innerHTML = '';
+
+      if (blocks.length === 0) {
+        listEl.innerHTML = '<div class="empty-state">No blocks found</div>';
+        return;
+      }
+
+      blocks.forEach((blockCode, index) => {
+        const li = document.createElement('li');
+        li.className = 'block-item';
+        li.innerHTML = `
+          <span class="block-code">${blockCode}</span>
+          <div class="block-actions">
+            <button class="btn btn-add" onclick="addBlock('${blockCode}')">Add</button>
+            <button class="btn btn-remove" onclick="removeBlock(${index})">Remove</button>
+          </div>
+        `;
+        listEl.appendChild(li);
+      });
+    }
+
+    // Добавление блока
+    function addBlock(blockCode) {
+      console.log('Add block:', blockCode);
+      // TODO: Реализовать логику добавления блока в Bitrix24
+      alert(`Adding block: ${blockCode}\n\nThis functionality needs to be implemented with Bitrix24 API.`);
+    }
+
+    // Удаление блока
+    function removeBlock(index) {
+      if (confirm(`Remove block "${blocks[index]}"?`)) {
+        blocks.splice(index, 1);
+        renderBlocks();
+        // TODO: Сохранить изменения в blocks.json через API или файловую систему
+        console.log('Removed block at index:', index);
+        console.log('Updated blocks:', blocks);
+      }
+    }
+
+    // Инициализация при загрузке страницы
+    document.addEventListener('DOMContentLoaded', loadBlocks);
+  </script>
+</body>
+
+</html>
