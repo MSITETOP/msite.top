@@ -1,0 +1,28 @@
+name: Deploy to Yandex Cloud S3
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Upload files to Object Storage
+        id: s3-upload
+        uses: yc-actions/yc-obj-storage-upload@v3
+        with:
+          yc-sa-json-credentials: ${{ secrets.YC_SA_JSON_CREDENTIALS }}
+          bucket: msite
+          root: app
+          prefix: app
+          include: |
+            *
+            **/*
+          clear: true
