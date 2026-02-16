@@ -1699,7 +1699,7 @@ transform: translateX(-50%);
   position: absolute;
   top: 220px;
   left: 150px;
-  background: url('assets/header-man.png') no-repeat center;
+  background: url('header-man.png') no-repeat center;
   width: 250px; /* Задайте размер */
   height: 201px; /* Задайте размер */
   background-size: contain;
