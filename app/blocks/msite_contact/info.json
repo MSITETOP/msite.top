@@ -1,0 +1,8 @@
+{
+  "code": "msite_contact",
+  "fields": {
+    "NAME": "Contact",
+    "DESCRIPTION": "Contact section with contact information, benefits list, and integrated Bitrix24 CRM form.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/bitrix24-silver-partner.png"
+  }
+}

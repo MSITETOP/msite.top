@@ -1,0 +1,8 @@
+{
+  "code": "msite_process",
+  "fields": {
+    "NAME": "Process",
+    "DESCRIPTION": "Process section showing how we work. Includes title, subtitle, and 5 numbered steps with titles and descriptions.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/bitrix24-silver-partner.png"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "code": "msite_testimonials",
+  "fields": {
+    "NAME": "Testimonials",
+    "DESCRIPTION": "Client testimonials section with title, subtitle, and 3 testimonial cards with avatars, ratings, quotes, author names, roles, and dates.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/bitrix24-silver-partner.png"
+  }
+}

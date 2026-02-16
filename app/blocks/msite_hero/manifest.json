@@ -1,0 +1,68 @@
+{
+  "block": {
+    "name": "Hero",
+    "section": ["cover", "hero"]
+  },
+  "nodes": {
+    ".landing-block-node-badge": {
+      "name": "Badge image",
+      "type": "img"
+    },
+    ".landing-block-node-title": {
+      "name": "Title",
+      "type": "text"
+    },
+    ".landing-block-node-subtitle": {
+      "name": "Subtitle",
+      "type": "text"
+    },
+    ".landing-block-node-cta-text": {
+      "name": "CTA button text",
+      "type": "text"
+    },
+    ".landing-block-node-cta-link": {
+      "name": "CTA button link",
+      "type": "link"
+    },
+    ".landing-block-node-cta-secondary-text": {
+      "name": "Secondary CTA button text",
+      "type": "text"
+    },
+    ".landing-block-node-cta-secondary-link": {
+      "name": "Secondary CTA button link",
+      "type": "link"
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default"]
+    },
+    "nodes": {
+      ".hero": {
+        "name": "Hero container",
+        "type": ["box", "paddings"]
+      },
+      ".landing-block-node-title": {
+        "name": "Title",
+        "type": ["typo"]
+      },
+      ".landing-block-node-subtitle": {
+        "name": "Subtitle",
+        "type": ["typo"]
+      },
+      ".landing-block-node-cta-link": {
+        "name": "Primary CTA button",
+        "type": ["button"]
+      },
+      ".landing-block-node-cta-secondary-link": {
+        "name": "Secondary CTA button",
+        "type": ["button"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ]
+  }
+}

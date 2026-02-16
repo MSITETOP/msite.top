@@ -1,0 +1,84 @@
+{
+  "block": {
+    "name": "Services",
+    "section": ["text", "features"]
+  },
+  "nodes": {
+    ".landing-block-node-title": {
+      "name": "Section title",
+      "type": "text"
+    },
+    ".landing-block-node-subtitle": {
+      "name": "Section subtitle",
+      "type": "text"
+    },
+    ".landing-block-node-intro": {
+      "name": "Intro text",
+      "type": "text"
+    },
+    ".landing-block-node-service-icon": {
+      "name": "Service icon",
+      "type": "img"
+    },
+    ".landing-block-node-service-title": {
+      "name": "Service title",
+      "type": "text"
+    },
+    ".landing-block-node-service-text": {
+      "name": "Service description",
+      "type": "text"
+    },
+    ".landing-block-node-service-cta": {
+      "name": "Service CTA button",
+      "type": "link"
+    },
+    ".landing-block-node-service-link": {
+      "name": "Service link",
+      "type": "link"
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default"]
+    },
+    "nodes": {
+      ".section": {
+        "name": "Section container",
+        "type": ["box", "paddings"]
+      },
+      ".landing-block-node-title": {
+        "name": "Title",
+        "type": ["typo"]
+      },
+      ".landing-block-node-subtitle": {
+        "name": "Subtitle",
+        "type": ["typo"]
+      },
+      ".landing-block-node-intro": {
+        "name": "Intro text",
+        "type": ["typo"]
+      },
+      ".landing-block-node-service-title": {
+        "name": "Service title",
+        "type": ["typo"]
+      },
+      ".landing-block-node-service-text": {
+        "name": "Service text",
+        "type": ["typo"]
+      },
+      ".landing-block-node-service-cta": {
+        "name": "Service CTA button",
+        "type": ["button"]
+      },
+      ".landing-block-node-service-link": {
+        "name": "Service link",
+        "type": ["typo-link"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ]
+  }
+}

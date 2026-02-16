@@ -1,0 +1,8 @@
+{
+  "code": "msite_services",
+  "fields": {
+    "NAME": "Services",
+    "DESCRIPTION": "Services section with title, subtitle, intro text, and grid of 7 service cards with icons, titles, descriptions, and CTA links.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/icons/installation.svg"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "block": {
+    "name": "Why Bitrix24",
+    "section": ["text", "features"]
+  },
+  "nodes": {
+    ".landing-block-node-title": {
+      "name": "Section title",
+      "type": "text"
+    },
+    ".landing-block-node-subtitle": {
+      "name": "Section subtitle",
+      "type": "text"
+    },
+    ".landing-block-node-intro": {
+      "name": "Intro text",
+      "type": "text"
+    },
+    ".landing-block-node-benefit-title": {
+      "name": "Benefit title",
+      "type": "text"
+    },
+    ".landing-block-node-benefit-text": {
+      "name": "Benefit description",
+      "type": "text"
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default"]
+    },
+    "nodes": {
+      ".section": {
+        "name": "Section container",
+        "type": ["box", "paddings"]
+      },
+      ".landing-block-node-title": {
+        "name": "Title",
+        "type": ["typo"]
+      },
+      ".landing-block-node-subtitle": {
+        "name": "Subtitle",
+        "type": ["typo"]
+      },
+      ".landing-block-node-intro": {
+        "name": "Intro text",
+        "type": ["typo"]
+      },
+      ".landing-block-node-benefit-title": {
+        "name": "Benefit title",
+        "type": ["typo"]
+      },
+      ".landing-block-node-benefit-text": {
+        "name": "Benefit text",
+        "type": ["typo"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "block": {
+    "name": "Testimonials",
+    "section": ["text", "reviews"]
+  },
+  "nodes": {
+    ".landing-block-node-title": {
+      "name": "Section title",
+      "type": "text"
+    },
+    ".landing-block-node-subtitle": {
+      "name": "Section subtitle",
+      "type": "text"
+    },
+    ".landing-block-node-testimonial-avatar": {
+      "name": "Avatar initials",
+      "type": "text"
+    },
+    ".landing-block-node-testimonial-rating": {
+      "name": "Rating stars",
+      "type": "text"
+    },
+    ".landing-block-node-testimonial-quote": {
+      "name": "Testimonial quote",
+      "type": "text"
+    },
+    ".landing-block-node-testimonial-name": {
+      "name": "Author name",
+      "type": "text"
+    },
+    ".landing-block-node-testimonial-role": {
+      "name": "Author role",
+      "type": "text"
+    },
+    ".landing-block-node-testimonial-date": {
+      "name": "Date",
+      "type": "text"
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default"]
+    },
+    "nodes": {
+      ".section": {
+        "name": "Section container",
+        "type": ["box", "paddings"]
+      },
+      ".landing-block-node-title": {
+        "name": "Title",
+        "type": ["typo"]
+      },
+      ".landing-block-node-subtitle": {
+        "name": "Subtitle",
+        "type": ["typo"]
+      },
+      ".landing-block-node-testimonial-quote": {
+        "name": "Quote text",
+        "type": ["typo"]
+      },
+      ".landing-block-node-testimonial-name": {
+        "name": "Author name",
+        "type": ["typo"]
+      },
+      ".landing-block-node-testimonial-role": {
+        "name": "Author role",
+        "type": ["typo"]
+      },
+      ".landing-block-node-testimonial-date": {
+        "name": "Date",
+        "type": ["typo"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ]
+  }
+}

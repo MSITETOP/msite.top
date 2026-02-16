@@ -1,0 +1,8 @@
+{
+  "code": "msite_hero",
+  "fields": {
+    "NAME": "Hero",
+    "DESCRIPTION": "Main hero section with Silver Partner badge, headline, subtitle, and CTA buttons. Full-screen height with background graphics.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/bitrix24-silver-partner.png"
+  }
+}

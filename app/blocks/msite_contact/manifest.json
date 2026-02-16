@@ -1,0 +1,48 @@
+{
+  "block": {
+    "name": "Contact",
+    "section": ["text", "form"]
+  },
+  "nodes": {
+    ".landing-block-node-benefit-text": {
+      "name": "Benefit text",
+      "type": "text"
+    },
+    ".landing-block-node-contact-label": {
+      "name": "Contact label",
+      "type": "text"
+    },
+    ".landing-block-node-contact-value": {
+      "name": "Contact value",
+      "type": "link"
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default"]
+    },
+    "nodes": {
+      ".section": {
+        "name": "Section container",
+        "type": ["box", "paddings"]
+      },
+      ".landing-block-node-benefit-text": {
+        "name": "Benefit text",
+        "type": ["typo"]
+      },
+      ".landing-block-node-contact-label": {
+        "name": "Contact label",
+        "type": ["typo"]
+      },
+      ".landing-block-node-contact-value": {
+        "name": "Contact value",
+        "type": ["typo-link"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ]
+  }
+}

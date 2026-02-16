@@ -1,0 +1,8 @@
+{
+  "code": "msite_footer",
+  "fields": {
+    "NAME": "Footer",
+    "DESCRIPTION": "Site footer with logo, description, navigation links, legal links, Silver Partner badge, and copyright.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/logo.png"
+  }
+}
