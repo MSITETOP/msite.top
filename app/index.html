@@ -264,16 +264,29 @@
           fields.SECTIONS = sections;
         }
 
-        // Удаляем block из манифеста, так как он не нужен в manifest (только в fields)
-        const { block, ...manifestWithoutBlock } = manifest;
+        // Формируем манифест: оставляем block, но убираем из него section и name (они идут в fields)
+        // Для форм важно сохранить block.subtype в манифесте
+        const manifestForRegister = JSON.parse(JSON.stringify(manifest)); // Глубокая копия
+        if (manifestForRegister.block) {
+          // Создаем новый объект block только с нужными полями (subtype и другие, кроме section и name)
+          const { section, name, description, preview, ...blockRest } = manifestForRegister.block;
+          // Оставляем только те поля, которые должны быть в manifest.block (subtype и т.д.)
+          manifestForRegister.block = Object.keys(blockRest).length > 0 ? blockRest : {};
+          // Если block стал пустым, удаляем его (но для форм обычно есть subtype)
+          if (Object.keys(manifestForRegister.block).length === 0) {
+            delete manifestForRegister.block;
+          }
+        }
 
         // Сначала проверяем содержимое блока через checkcontent
+        const checkContentParams = {
+          code: info.code,
+          content: content
+        };
+        console.log('Calling landing.repo.checkcontent with params:', checkContentParams);
         BX24.callMethod(
           'landing.repo.checkcontent',
-          {
-            code: info.code,
-            content: content
-          },
+          checkContentParams,
           function(checkResult) {
             if (checkResult.error()) {
               button.disabled = false;
@@ -293,10 +306,11 @@
             const blockData = {
               code: info.code,
               fields: fields,
-              manifest: manifestWithoutBlock
+              manifest: manifestForRegister
             };
 
             // Регистрируем блок через Bitrix24 API
+            console.log('Calling landing.repo.register with params:', JSON.stringify(blockData, null, 2));
             BX24.callMethod(
               'landing.repo.register',
               blockData,
@@ -333,9 +347,11 @@
       button.disabled = true;
       button.textContent = 'Removing...';
 
+      const unregisterParams = { code: blockCode };
+      console.log('Calling landing.repo.unregister with params:', unregisterParams);
       BX24.callMethod(
         'landing.repo.unregister',
-        { code: blockCode },
+        unregisterParams,
         function(result) {
           button.disabled = false;
           button.textContent = originalText;
