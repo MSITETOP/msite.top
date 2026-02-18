@@ -1724,5 +1724,5 @@ transform: translateY(0) translateX(0); /* Возврат в центр */
 }
 
 .bitrix-footer, .b24-form-sign {
-  display: none;
+  display: none!important;
 }
