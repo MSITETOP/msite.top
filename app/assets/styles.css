@@ -1723,6 +1723,6 @@ transform: translateY(0) translateX(0); /* Возврат в центр */
   }
 }
 
-.bitrix-footer {
+.bitrix-footer, .b24-form-sign {
   display: none;
 }
