@@ -1485,8 +1485,15 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
 @media (max-width: 768px) {
   .header__nav { display: none; }
   .header__right { display: none; }
-  .lang-switcher:not(.lang-switcher--desktop) { display: inline-flex; margin-top: var(--spacing-sm); }
-  .header__cta--mobile { display: inline-flex; margin-top: var(--spacing-sm); }
+  .header__mobile-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--spacing-md);
+    width: 100%;
+  }
+  .header__mobile-actions .header__cta--mobile { display: inline-flex; }
+  .header__mobile-actions .lang-switcher:not(.lang-switcher--desktop) { display: inline-flex; }
   .header__burger { display: flex; }
   #header-menu-toggle:checked ~ .header__nav {
     display: block;
