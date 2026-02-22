@@ -81,16 +81,13 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
 /* Header — floating */
 .header {
   position: fixed;
-  top: var(--spacing-md);
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - var(--spacing-lg) * 2);
-  max-width: calc(var(--container-max) + var(--spacing-md) * 2);
+  top: 0;
+  left: 0;
+  width: 100%
   z-index: 100;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-radius: var(--radius-lg);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(202, 47, 93, 0.06);
   border: 1px solid rgba(202, 47, 93, 0.08);
 }
