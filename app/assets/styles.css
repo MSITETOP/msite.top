@@ -1527,7 +1527,7 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
 }
 
 @media (max-width: 480px) {
-  .container { padding: 0 var(--spacing-sm); }
+  .container { padding: var(--spacing-sm); }
   .section { padding: var(--spacing-xl) 0; }
 }
 
