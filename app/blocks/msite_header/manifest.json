@@ -1,12 +1,12 @@
 {
   "block": {
     "name": "Header",
-    "section": ["menu", "header"],
-    "subtype": "menu",
-    "subtype_params": {
-      "selector": ".landing-block-node-menu-link",
-      "count": 5,
-      "source": "structure"
+    "section": ["menu", "header"]
+  },
+  "cards": {
+    ".landing-block-node-menu-item": {
+      "name": "Menu item",
+      "label": [".landing-block-node-menu-link"]
     }
   },
   "nodes": {
@@ -55,8 +55,6 @@
     }
   },
   "assets": {
-    "css": [
-      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
-    ]
+    "css": ["https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"]
   }
 }
