@@ -1,12 +1,28 @@
 {
   "block": {
     "name": "Header",
-    "section": ["menu", "header"]
+    "section": [
+      "menu",
+      "header"
+    ]
   },
   "cards": {
     ".landing-block-node-menu-item": {
       "name": "Menu item",
-      "label": [".landing-block-node-menu-link"]
+      "label": [
+        ".landing-block-node-menu-link"
+      ]
+    }
+  },
+  "attrs": {
+    ".landing-block-node-lang-switcher": {
+      "name": "Active language",
+      "type": "dropdown",
+      "attribute": "data-active-lang",
+      "items": {
+        "en": "EN (English)",
+        "es": "ES (Spanish)"
+      }
     }
   },
   "nodes": {
@@ -33,28 +49,42 @@
   },
   "style": {
     "block": {
-      "type": ["block-default-wo-background"]
+      "type": [
+        "block-default-wo-background"
+      ]
     },
     "nodes": {
       ".header": {
         "name": "Header container",
-        "type": ["box", "paddings"]
+        "type": [
+          "box",
+          "paddings"
+        ]
       },
       ".landing-block-node-menu-link": {
         "name": "Menu link",
-        "type": ["typo-link", "navbar"]
+        "type": [
+          "typo-link",
+          "navbar"
+        ]
       },
       ".landing-block-node-lang-link": {
         "name": "Language link",
-        "type": ["typo-link"]
+        "type": [
+          "typo-link"
+        ]
       },
       ".landing-block-node-cta-link": {
         "name": "CTA button",
-        "type": ["button"]
+        "type": [
+          "button"
+        ]
       }
     }
   },
   "assets": {
-    "css": ["https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"]
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ]
   }
 }

@@ -142,7 +142,9 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
   color: var(--color-text);
   background: rgba(0, 0, 0, 0.05);
 }
-.lang-switcher__btn--active {
+.lang-switcher__btn--active,
+.lang-switcher[data-active-lang="en"] .lang-switcher__btn[lang="en"],
+.lang-switcher[data-active-lang="es"] .lang-switcher__btn[lang="es"] {
   background: #fff;
   color: var(--color-primary);
   font-weight: 600;
@@ -160,7 +162,9 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
 }
-.footer__lang .lang-switcher__btn--active {
+.footer__lang .lang-switcher__btn--active,
+.footer__lang .lang-switcher[data-active-lang="en"] .lang-switcher__btn[lang="en"],
+.footer__lang .lang-switcher[data-active-lang="es"] .lang-switcher__btn[lang="es"] {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
