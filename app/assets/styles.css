@@ -453,7 +453,6 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
 .service-card__icon {
   width: 48px;
   height: 48px;
-  margin-bottom: var(--spacing-md);
   color: var(--color-primary);
 }
 .service-card__icon img { width: 32px; height: 32px; }
