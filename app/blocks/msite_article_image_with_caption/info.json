@@ -1,0 +1,9 @@
+{
+  "code": "msite_article_image_with_caption",
+  "fields": {
+    "NAME": "Article image (with caption)",
+    "DESCRIPTION": "Inline article image block with a short caption.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/msite_why_us.png"
+  }
+}
+

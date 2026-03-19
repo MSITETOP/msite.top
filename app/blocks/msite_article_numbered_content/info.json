@@ -1,0 +1,9 @@
+{
+  "code": "msite_article_numbered_content",
+  "fields": {
+    "NAME": "Article numbered content (div)",
+    "DESCRIPTION": "Numbered content block for detailed article pages (each item is a div).",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/msite_process.png"
+  }
+}
+

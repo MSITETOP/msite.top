@@ -1,0 +1,9 @@
+{
+  "code": "msite_article_cover_image",
+  "fields": {
+    "NAME": "Article cover image",
+    "DESCRIPTION": "Cover image block for a detailed article page.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/msite_hero.png"
+  }
+}
+

@@ -1,0 +1,33 @@
+{
+  "block": {
+    "name": "Article paragraph (div)",
+    "section": ["text"]
+  },
+  "nodes": {
+    ".landing-block-node-article-paragraph": {
+      "name": "Paragraph text",
+      "type": "text"
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default"]
+    },
+    "nodes": {
+      ".article-block": {
+        "name": "Article block wrapper",
+        "type": ["box", "paddings"]
+      },
+      ".landing-block-node-article-paragraph": {
+        "name": "Paragraph",
+        "type": ["typo"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ]
+  }
+}
+

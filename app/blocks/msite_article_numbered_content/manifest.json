@@ -1,0 +1,49 @@
+{
+  "block": {
+    "name": "Article numbered content (div)",
+    "section": ["text"]
+  },
+  "cards": {
+    ".landing-block-node-numbered-item": {
+      "name": "Numbered item",
+      "label": [
+        ".landing-block-node-numbered-item-text"
+      ]
+    }
+  },
+  "nodes": {
+    ".landing-block-node-numbered-item-num": {
+      "name": "Item number",
+      "type": "text"
+    },
+    ".landing-block-node-numbered-item-text": {
+      "name": "Item text",
+      "type": "text"
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default"]
+    },
+    "nodes": {
+      ".article-block": {
+        "name": "Article block wrapper",
+        "type": ["box", "paddings"]
+      },
+      ".landing-block-node-numbered-item-num": {
+        "name": "Item number",
+        "type": ["typo"]
+      },
+      ".landing-block-node-numbered-item-text": {
+        "name": "Item text",
+        "type": ["typo"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ]
+  }
+}
+

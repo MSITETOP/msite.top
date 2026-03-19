@@ -1,0 +1,9 @@
+{
+  "code": "msite_article_date",
+  "fields": {
+    "NAME": "Article date",
+    "DESCRIPTION": "Date-only block for a detailed article page.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/msite_process.png"
+  }
+}
+

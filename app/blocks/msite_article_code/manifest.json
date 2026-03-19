@@ -1,0 +1,48 @@
+{
+  "block": {
+    "name": "Article code (JS/Python)",
+    "section": ["text"]
+  },
+  "nodes": {
+    ".landing-block-node-article-code": {
+      "name": "Code",
+      "type": "text"
+    }
+  },
+  "attrs": {
+    ".article-code": {
+      "name": "Code language",
+      "type": "dropdown",
+      "attribute": "data-code-language",
+      "items": {
+        "javascript": "JavaScript",
+        "python": "Python"
+      }
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default"]
+    },
+    "nodes": {
+      ".article-block": {
+        "name": "Article block wrapper",
+        "type": ["box", "paddings"]
+      },
+      ".article-code": {
+        "name": "Code container",
+        "type": ["box", "paddings"]
+      },
+      ".landing-block-node-article-code": {
+        "name": "Code text",
+        "type": ["typo"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ]
+  }
+}
+

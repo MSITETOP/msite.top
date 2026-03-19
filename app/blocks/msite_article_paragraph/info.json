@@ -1,0 +1,9 @@
+{
+  "code": "msite_article_paragraph",
+  "fields": {
+    "NAME": "Article paragraph (div)",
+    "DESCRIPTION": "Paragraph block for a detailed article page (uses a div wrapper).",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/msite_testimonials.png"
+  }
+}
+

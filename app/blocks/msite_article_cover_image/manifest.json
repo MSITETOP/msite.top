@@ -1,0 +1,29 @@
+{
+  "block": {
+    "name": "Article cover image",
+    "section": ["text"]
+  },
+  "nodes": {
+    ".landing-block-node-article-cover-image": {
+      "name": "Cover image",
+      "type": "img"
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default"]
+    },
+    "nodes": {
+      ".article-block": {
+        "name": "Article block wrapper",
+        "type": ["box", "paddings"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ]
+  }
+}
+

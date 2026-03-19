@@ -1,0 +1,9 @@
+{
+  "code": "msite_article_image",
+  "fields": {
+    "NAME": "Article image",
+    "DESCRIPTION": "Inline article image block without caption.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/msite_services.png"
+  }
+}
+

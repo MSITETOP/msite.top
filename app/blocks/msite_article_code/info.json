@@ -1,0 +1,9 @@
+{
+  "code": "msite_article_code",
+  "fields": {
+    "NAME": "Article code (JS/Python)",
+    "DESCRIPTION": "Code block for detailed article pages. Supports pasting JavaScript or Python.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/msite_process.png"
+  }
+}
+

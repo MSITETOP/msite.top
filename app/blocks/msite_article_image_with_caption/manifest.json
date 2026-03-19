@@ -1,0 +1,37 @@
+{
+  "block": {
+    "name": "Article image (with caption)",
+    "section": ["text"]
+  },
+  "nodes": {
+    ".landing-block-node-article-image-with-caption": {
+      "name": "Image",
+      "type": "img"
+    },
+    ".landing-block-node-article-image-caption": {
+      "name": "Caption",
+      "type": "text"
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default"]
+    },
+    "nodes": {
+      ".article-block": {
+        "name": "Article block wrapper",
+        "type": ["box", "paddings"]
+      },
+      ".landing-block-node-article-image-caption": {
+        "name": "Caption",
+        "type": ["typo"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ]
+  }
+}
+
