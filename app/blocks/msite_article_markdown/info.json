@@ -1,0 +1,8 @@
+{
+  "code": "msite_article_markdown",
+  "fields": {
+    "NAME": "Article markdown",
+    "DESCRIPTION": "Article block that renders Markdown into formatted HTML.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/msite_testimonials.png"
+  }
+}

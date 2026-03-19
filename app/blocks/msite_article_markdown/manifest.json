@@ -1,0 +1,39 @@
+{
+  "block": {
+    "name": "Article markdown",
+    "section": ["text"]
+  },
+  "nodes": {
+    ".landing-block-node-article-markdown-source": {
+      "name": "Markdown source",
+      "type": "text"
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default"]
+    },
+    "nodes": {
+      ".article-block": {
+        "name": "Article block wrapper",
+        "type": ["box", "paddings"]
+      },
+      ".article-markdown__source": {
+        "name": "Markdown source",
+        "type": ["typo", "box", "paddings"]
+      },
+      ".article-markdown__content": {
+        "name": "Rendered markdown",
+        "type": ["typo"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ],
+    "js": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/msite_article_markdown.js"
+    ]
+  }
+}
