@@ -108,7 +108,7 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
 
 /* Article navigation (TOC) */
 .article-toc {
-  position: sticky;
+  position: fixed;
   top: 96px; /* space below fixed header */
   width: 260px;
   max-height: calc(100vh - 120px);
@@ -117,6 +117,7 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
   border: 1px solid var(--color-border);
   background: rgba(255, 255, 255, 0.92);
   box-shadow: var(--shadow);
+  z-index: 30;
   padding: var(--spacing-md);
 }
 .article-toc__title {
