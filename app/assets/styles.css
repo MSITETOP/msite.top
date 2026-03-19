@@ -1645,6 +1645,18 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
   stroke: none;
 }
 
+.article-code__icon-image {
+  width: 16px;
+  height: 16px;
+  display: block;
+  opacity: 0.75;
+}
+
+.article-code__action:hover .article-code__icon-image,
+.article-code__action[data-copied="1"] .article-code__icon-image {
+  opacity: 1;
+}
+
 .article-code__pre {
   margin: 0;
   overflow: auto;
