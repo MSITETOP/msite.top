@@ -1,0 +1,9 @@
+{
+  "code": "msite_article_toc",
+  "fields": {
+    "NAME": "Article navigation (TOC)",
+    "DESCRIPTION": "Sticky left article navigation (table of contents) with responsive behavior on mobile.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/msite_process.png"
+  }
+}
+
