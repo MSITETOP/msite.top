@@ -44,36 +44,11 @@
     if (!articleCode) return;
 
     var codeEl = articleCode.querySelector('.article-code__code');
-    if (!codeEl || codeEl.dataset.lineNumbersApplied === '1') return;
+    if (!codeEl) return;
 
-    // Split plain text into lines and render number gutter.
     var raw = codeEl.textContent || '';
     raw = raw.replace(/\r\n?/g, '\n');
-    if (raw.endsWith('\n')) raw = raw.slice(0, -1);
     codeEl.dataset.rawCode = raw;
-
-    var lines = raw.length ? raw.split('\n') : [''];
-
-    codeEl.textContent = '';
-    for (var i = 0; i < lines.length; i++) {
-      var lineEl = document.createElement('span');
-      lineEl.className = 'article-code__line';
-
-      var numEl = document.createElement('span');
-      numEl.className = 'article-code__line-num';
-      numEl.setAttribute('aria-hidden', 'true');
-      numEl.textContent = String(i + 1);
-
-      var textEl = document.createElement('span');
-      textEl.className = 'article-code__line-text';
-      textEl.textContent = lines[i];
-
-      lineEl.appendChild(numEl);
-      lineEl.appendChild(textEl);
-      codeEl.appendChild(lineEl);
-    }
-
-    codeEl.dataset.lineNumbersApplied = '1';
 
     var copyBtn = articleCode.querySelector('.article-code__action[data-action="copy"]');
     if (!copyBtn || copyBtn.dataset.copyBound === '1') return;
