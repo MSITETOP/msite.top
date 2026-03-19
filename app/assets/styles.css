@@ -1739,12 +1739,11 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
   text-decoration: none;
 }
 
-.article-toc-block {
-  padding-top: var(--spacing-md);
-  padding-bottom: var(--spacing-lg);
-}
-
 @media (max-width: 900px) {
+  .article-toc-block {
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-lg);
+  }
   .article-toc {
     position: relative;
     top: auto;
