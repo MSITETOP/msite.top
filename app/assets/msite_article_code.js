@@ -44,11 +44,19 @@
     if (!articleCode) return;
 
     var codeEl = articleCode.querySelector('.article-code__code');
+    var gutterEl = articleCode.querySelector('.article-code__gutter');
     if (!codeEl) return;
 
     var raw = codeEl.textContent || '';
     raw = raw.replace(/\r\n?/g, '\n');
     codeEl.dataset.rawCode = raw;
+
+    if (gutterEl) {
+      var lineCount = raw.length ? raw.split('\n').length : 1;
+      var nums = [];
+      for (var i = 1; i <= lineCount; i++) nums.push(String(i));
+      gutterEl.textContent = nums.join('\n');
+    }
 
     var copyBtn = articleCode.querySelector('.article-code__action[data-action="copy"]');
     if (!copyBtn || copyBtn.dataset.copyBound === '1') return;
