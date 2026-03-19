@@ -1,0 +1,60 @@
+{
+  "block": {
+    "name": "Article steps with images (H3 + numbered list)",
+    "section": ["text"]
+  },
+  "cards": {
+    ".landing-block-node-step-item": {
+      "name": "Step item",
+      "label": [
+        ".landing-block-node-step-item-text"
+      ]
+    }
+  },
+  "nodes": {
+    ".landing-block-node-article-h3": {
+      "name": "Heading H3",
+      "type": "text"
+    },
+    ".landing-block-node-step-item-num": {
+      "name": "Step number",
+      "type": "text"
+    },
+    ".landing-block-node-step-item-text": {
+      "name": "Step text",
+      "type": "text"
+    },
+    ".landing-block-node-step-item-image": {
+      "name": "Step image",
+      "type": "img"
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default"]
+    },
+    "nodes": {
+      ".article-block": {
+        "name": "Article block wrapper",
+        "type": ["box", "paddings"]
+      },
+      ".landing-block-node-article-h3": {
+        "name": "Heading H3",
+        "type": ["typo"]
+      },
+      ".landing-block-node-step-item-num": {
+        "name": "Step number",
+        "type": ["typo"]
+      },
+      ".landing-block-node-step-item-text": {
+        "name": "Step text",
+        "type": ["typo"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ]
+  }
+}

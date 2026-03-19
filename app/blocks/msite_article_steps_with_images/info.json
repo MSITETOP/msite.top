@@ -1,0 +1,8 @@
+{
+  "code": "msite_article_steps_with_images",
+  "fields": {
+    "NAME": "Article steps with images (H3 + numbered list)",
+    "DESCRIPTION": "Article block with H3 heading and numbered steps, each step supports text and optional image.",
+    "PREVIEW": "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/msite_why_us.png"
+  }
+}

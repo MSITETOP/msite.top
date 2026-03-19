@@ -1549,6 +1549,59 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
   line-height: 1.75;
 }
 
+.article-steps {
+  margin: 0;
+}
+
+.article-heading--h3 {
+  margin: 0 0 var(--spacing-md);
+  font-size: clamp(1.375rem, 2vw, 1.75rem);
+  line-height: 1.3;
+}
+
+.article-step-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+  padding: var(--spacing-md);
+  border-radius: var(--radius);
+  background: rgba(202, 47, 93, 0.03);
+  border: 1px solid rgba(202, 47, 93, 0.15);
+  margin-bottom: var(--spacing-sm);
+}
+
+.article-step-item:last-child {
+  margin-bottom: 0;
+}
+
+.article-step-item__num {
+  min-width: 2.2rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1.3;
+}
+
+.article-step-item__content {
+  min-width: 0;
+}
+
+.article-step-item__text {
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+.article-step-item__image {
+  display: block;
+  width: 100%;
+  max-width: 32.5rem;
+  height: auto;
+  margin-top: var(--spacing-sm);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow);
+}
+
 /* Article code blocks */
 .article-code {
   margin: 0;
@@ -1738,7 +1791,9 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
   background: rgba(202, 47, 93, 0.04);
   text-decoration: none;
 }
-
+.article-toc-block { 
+  margin: 0;
+}
 @media (max-width: 900px) {
   .article-toc-block {
     padding-top: var(--spacing-md);
