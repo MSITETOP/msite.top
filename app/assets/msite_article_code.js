@@ -1,6 +1,18 @@
 (function () {
   'use strict';
 
+  function getLineCount(codeEl) {
+    if (!codeEl) return 1;
+
+    var html = codeEl.innerHTML || '';
+    var text = codeEl.textContent || '';
+
+    var brCount = (html.match(/<br\s*\/?>/gi) || []).length;
+    var newlineCount = (text.match(/\r\n|\r|\n/g) || []).length;
+
+    return Math.max(1, brCount + 1, newlineCount + 1);
+  }
+
   function copyToClipboard(text) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       return navigator.clipboard.writeText(text);
@@ -47,12 +59,11 @@
     var gutterEl = articleCode.querySelector('.article-code__gutter');
     if (!codeEl) return;
 
-    var raw = codeEl.textContent || '';
-    raw = raw.replace(/\r\n?/g, '\n');
+    var raw = (codeEl.textContent || '').replace(/\r\n?/g, '\n');
     codeEl.dataset.rawCode = raw;
 
     if (gutterEl) {
-      var lineCount = raw.length ? raw.split('\n').length : 1;
+      var lineCount = getLineCount(codeEl);
       var nums = [];
       for (var i = 1; i <= lineCount; i++) nums.push(String(i));
       gutterEl.textContent = nums.join('\n');
