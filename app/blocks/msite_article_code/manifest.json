@@ -42,6 +42,9 @@
   "assets": {
     "css": [
       "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ],
+    "js": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/msite_article_code.js"
     ]
   }
 }
