@@ -1639,6 +1639,12 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
   line-height: 1;
 }
 
+.article-code__icon--copy {
+  /* The provided sprite icon is filled; override the generic stroke styles. */
+  fill: currentColor;
+  stroke: none;
+}
+
 .article-code__pre {
   margin: 0;
   overflow: auto;
