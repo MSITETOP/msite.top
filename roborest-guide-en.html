@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guide to using the RoboREST app for Bitrix24.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <title>RoboREST Guide | MSITE.TOP</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Home">
+        <img src="assets/logo.png" alt="MSITE.TOP" width="140" height="44">
+      </a>
+      <nav class="header__nav" aria-label="Navigation">
+        <ul class="header__menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#contact">Contacts</a></li>
+          <li><a href="roborest-guide-en.html" aria-current="page">RoboREST Guide</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--legal">
+      <div class="container">
+        <div class="legal-content">
+          <h1>How to Use the RoboREST App</h1>
+
+          <p>
+            <span aria-hidden="true">🚀</span> <strong>RoboREST</strong> is a Bitrix24 app that lets you
+            create your own robots and activities in Python. It is a great fit when built-in automation
+            is not enough: you can integrate external APIs, work with files and databases, build reports,
+            run scheduled tasks, and add widgets.
+          </p>
+          <ul>
+            <li><span aria-hidden="true">🔗</span> Integrations with external services via API.</li>
+            <li><span aria-hidden="true">⚙️</span> Custom automation logic tailored to your processes.</li>
+            <li><span aria-hidden="true">📊</span> Reports, charts, and data processing inside your scenarios.</li>
+            <li><span aria-hidden="true">🧩</span> Widgets and additional UI elements.</li>
+          </ul>
+
+          <h2><span aria-hidden="true">👥</span> Who is RoboREST for?</h2>
+          <ul>
+            <li><span aria-hidden="true">🛠️</span> <strong>Integrators</strong> - quickly build custom scenarios that are not available in standard Bitrix24.</li>
+            <li><span aria-hidden="true">📁</span> <strong>Portal administrators</strong> - automate routine operations and reduce manual work.</li>
+            <li><span aria-hidden="true">📈</span> <strong>Business analysts</strong> - connect processes between CRM, ERP, and other systems.</li>
+            <li><span aria-hidden="true">🎯</span> <strong>Project managers</strong> - launch complex but manageable business processes.</li>
+          </ul>
+
+          <h2><span aria-hidden="true">⚡</span> 5-Minute Quick Start</h2>
+          <ol>
+            <li><span aria-hidden="true">🖥️</span> Open the RoboREST dashboard.</li>
+            <li><span aria-hidden="true">➕</span> Click the button to add a new robot/activity.</li>
+            <li><span aria-hidden="true">🧱</span> Select a template or create a solution from scratch.</li>
+            <li><span aria-hidden="true">🧪</span> Run a test and check the result.</li>
+            <li><span aria-hidden="true">🔗</span> Add the robot/activity to the required Bitrix24 business process.</li>
+            <li><span aria-hidden="true">⏰</span> If needed, set up scheduled runs (cron).</li>
+          </ol>
+
+          <h2><span aria-hidden="true">💳</span> Limits and Billing</h2>
+          <ul>
+            <li><span aria-hidden="true">✅</span> <strong>100 requests per month</strong> are available for free.</li>
+            <li><span aria-hidden="true">📌</span> The limit includes robot/activity runs and cron jobs.</li>
+            <li><span aria-hidden="true">🧪</span> Test runs from the editor are unlimited.</li>
+            <li><span aria-hidden="true">🆓</span> Calls to created widgets are not charged.</li>
+            <li><span aria-hidden="true">➕</span> You can purchase additional requests when needed.</li>
+          </ul>
+
+          <h2><span aria-hidden="true">🖥️</span> Main Interface Overview (Dashboard)</h2>
+          <p>
+            The diagram highlights key interface areas. Below is a short legend by number.
+          </p>
+
+          <img src="assets/image.png" width="100%" alt="RoboREST main interface with key dashboard elements">
+
+          <ol class="dashboard-map" aria-label="Dashboard elements legend">
+            <li class="dashboard-map__item">
+              <span class="dashboard-map__badge">1</span>
+              <span class="dashboard-map__icon" aria-hidden="true">📘</span>
+              <span class="dashboard-map__text"><strong>Guide</strong> - quick link to this page.</span>
+            </li>
+            <li class="dashboard-map__item">
+              <span class="dashboard-map__badge">2</span>
+              <span class="dashboard-map__icon" aria-hidden="true">💬</span>
+              <span class="dashboard-map__text"><strong>Support</strong> - support email and chat for setup and app usage questions.</span>
+            </li>
+            <li class="dashboard-map__item">
+              <span class="dashboard-map__badge">3</span>
+              <span class="dashboard-map__icon" aria-hidden="true">📈</span>
+              <span class="dashboard-map__text"><strong>Limits and statistics</strong> - current request usage and available balance.</span>
+            </li>
+            <li class="dashboard-map__item">
+              <span class="dashboard-map__badge">4</span>
+              <span class="dashboard-map__icon" aria-hidden="true">🤖</span>
+              <span class="dashboard-map__text"><strong>Robots/activities tabs</strong> - your scenarios and ready-to-use examples.</span>
+            </li>
+            <li class="dashboard-map__item">
+              <span class="dashboard-map__badge">5</span>
+              <span class="dashboard-map__icon" aria-hidden="true">➕</span>
+              <span class="dashboard-map__text"><strong>Add</strong> - create a new robot or activity.</span>
+            </li>
+            <li class="dashboard-map__item">
+              <span class="dashboard-map__badge">6</span>
+              <span class="dashboard-map__icon" aria-hidden="true">🧩</span>
+              <span class="dashboard-map__text"><strong>Scenario card</strong> - name, monthly run count, edit and delete buttons.</span>
+            </li>
+            <li class="dashboard-map__item">
+              <span class="dashboard-map__badge">7</span>
+              <span class="dashboard-map__icon" aria-hidden="true">⏰</span>
+              <span class="dashboard-map__text"><strong>Cron jobs</strong> - list of scheduled tasks, their status, and launch time.</span>
+            </li>
+            <li class="dashboard-map__item">
+              <span class="dashboard-map__badge">8</span>
+              <span class="dashboard-map__icon" aria-hidden="true">🪟</span>
+              <span class="dashboard-map__text"><strong>Widgets</strong> - created widgets and their embedding area.</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <img src="assets/bitrix24-silver-partner.png" alt="Bitrix24 Silver Partner" class="footer__badge">
+        <p class="footer__copyright">© 2026 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
