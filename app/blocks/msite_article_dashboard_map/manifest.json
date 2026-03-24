@@ -1,0 +1,40 @@
+{
+  "block": {
+    "name": "Article dashboard map",
+    "section": ["text"]
+  },
+  "cards": {
+    ".landing-block-node-dashboard-item": {
+      "name": "Dashboard item",
+      "label": [
+        ".landing-block-node-dashboard-item"
+      ]
+    }
+  },
+  "nodes": {
+    ".landing-block-node-dashboard-item": {
+      "name": "Item text",
+      "type": "text"
+    }
+  },
+  "style": {
+    "block": {
+      "type": ["block-default"]
+    },
+    "nodes": {
+      ".article-block": {
+        "name": "Article block wrapper",
+        "type": ["box", "paddings"]
+      },
+      ".landing-block-node-dashboard-item": {
+        "name": "Dashboard item text",
+        "type": ["typo"]
+      }
+    }
+  },
+  "assets": {
+    "css": [
+      "https://d5di175v9remas6vjon2.svoluuab.apigw.yandexcloud.net/app/assets/styles.css"
+    ]
+  }
+}
