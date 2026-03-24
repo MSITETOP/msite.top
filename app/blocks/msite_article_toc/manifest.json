@@ -1,7 +1,13 @@
 {
   "block": {
     "name": "Article navigation (TOC)",
-    "section": ["text"]
+    "section": ["menu"],
+    "subtype": "menu",
+    "subtype_params": {
+      "selector": ".landing-block-node-article-toc-item-link",
+      "count": 20,
+      "source": "catalog"
+    }
   },
   "cards": {
     ".landing-block-node-article-toc-item": {
