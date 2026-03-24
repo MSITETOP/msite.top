@@ -17,6 +17,13 @@
       ]
     }
   },
+  "attrs": {
+    ".landing-block-node-article-toc-item-checkbox": {
+      "name": "TOC item active state",
+      "type": "checkbox",
+      "attribute": "checked"
+    }
+  },
   "nodes": {
     ".landing-block-node-article-toc-title": {
       "name": "TOC title",
