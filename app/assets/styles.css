@@ -1820,22 +1820,8 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
   flex-direction: column;
   gap: var(--spacing-xs);
 }
-.landing-block-node-article-toc-item {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-}
-.article-toc__checkbox {
-  width: 1rem;
-  height: 1rem;
-  margin: 0;
-  accent-color: var(--color-primary);
-  flex: 0 0 auto;
-  cursor: pointer;
-}
 .article-toc__link {
   display: block;
-  flex: 1 1 auto;
   padding: 0.55rem 0.75rem;
   border-radius: var(--radius);
   border: 1px solid transparent;
@@ -1847,11 +1833,6 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
   border-color: rgba(202, 47, 93, 0.25);
   background: rgba(202, 47, 93, 0.04);
   text-decoration: none;
-}
-.article-toc__checkbox:checked + .article-toc__link {
-  color: var(--color-text);
-  border-color: rgba(202, 47, 93, 0.45);
-  background: rgba(202, 47, 93, 0.12);
 }
 .article-toc-block { 
   margin: 0;

@@ -1,13 +1,7 @@
 {
   "block": {
     "name": "Article navigation (TOC)",
-    "section": ["menu"],
-    "subtype": "menu",
-    "subtype_params": {
-      "selector": ".landing-block-node-article-toc-item-link",
-      "count": 20,
-      "source": "catalog"
-    }
+    "section": ["text"]
   },
   "cards": {
     ".landing-block-node-article-toc-item": {
@@ -15,13 +9,6 @@
       "label": [
         ".landing-block-node-article-toc-item-text"
       ]
-    }
-  },
-  "attrs": {
-    ".landing-block-node-article-toc-item-checkbox": {
-      "name": "TOC item active state",
-      "type": "checkbox",
-      "attribute": "checked"
     }
   },
   "nodes": {
