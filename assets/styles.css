@@ -1610,6 +1610,53 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
   color: var(--color-text-muted);
 }
 
+/* RoboREST dashboard map */
+.dashboard-map {
+  margin: var(--spacing-lg) 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.dashboard-map__item {
+  display: grid;
+  grid-template-columns: 2rem 1.75rem 1fr;
+  align-items: start;
+  column-gap: 0.65rem;
+  padding: 0.875rem 1rem;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+}
+.dashboard-map__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  background: rgba(202, 47, 93, 0.1);
+}
+.dashboard-map__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  font-size: 1rem;
+}
+.dashboard-map__text {
+  color: #3f3f3f;
+  line-height: 1.45;
+}
+.dashboard-map__text strong {
+  color: #1f1f1f;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .header__nav { display: none; }
@@ -1646,6 +1693,14 @@ h1, h2, h3, h4 { margin: 0 0 var(--spacing-sm); font-weight: 700; line-height: 1
   .footer__top { grid-template-columns: 1fr; }
   .footer__links { flex-direction: column; }
   .footer__bottom { flex-direction: column; align-items: flex-start; }
+
+  .dashboard-map {
+    grid-template-columns: 1fr;
+    gap: 0.625rem;
+  }
+  .dashboard-map__item {
+    padding: 0.8rem 0.875rem;
+  }
 }
 
 @media (max-width: 480px) {
