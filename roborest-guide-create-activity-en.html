@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to create a new robot/activity in RoboREST for Bitrix24: input/output parameters, Python code editor, and testing.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <title>Creating a Robot/Activity in RoboREST | MSITE.TOP</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Home">
+        <img src="assets/logo.png" alt="MSITE.TOP" width="140" height="44">
+      </a>
+      <nav class="header__nav" aria-label="Navigation">
+        <ul class="header__menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#contact">Contacts</a></li>
+          <li><a href="roborest-guide-en.html">RoboREST Guide</a></li>
+          <li><a href="roborest-guide-create-activity-en.html" aria-current="page">Create Activity</a></li>
+          <li><a href="roborest-guide-cron-jobs-en.html">Cron jobs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--legal">
+      <div class="container">
+        <div class="legal-content">
+          <h1><span aria-hidden="true">🤖</span> Creating a Robot/Activity</h1>
+
+          <p>
+            This guide shows how to create a new robot/activity in the <strong>RoboREST</strong> app for Bitrix24,
+            configure input and output parameters, work with the Python code editor, and verify the result with a test.
+          </p>
+
+          <h2><span aria-hidden="true">1️⃣</span> <span aria-hidden="true">➕</span> Step 1: Create a new robot/activity</h2>
+          <p>
+            It is easiest to create a new activity in one of two ways: use a ready-made example from the
+            <strong>“Examples”</strong> tab, or start from scratch. On the RoboREST main screen, click the green
+            <strong>“+ Add activity / robot”</strong> button in the top-right corner.
+          </p>
+
+          <img src="assets/1.jpg" width="100%" alt="Creating a new robot/activity">
+
+          <p>
+            The robot/activity creation page will open. Enter a name and continue to parameter settings.
+          </p>
+
+          <h2><span aria-hidden="true">2️⃣</span> <span aria-hidden="true">⬅️</span> Step 2: Configure input parameters</h2>
+          <p>
+            Input parameters are the data your robot receives as input (for example, from the previous step
+            of a business process).
+          </p>
+
+          <img src="assets/2.jpg" width="100%" alt="Configuring input parameters">
+
+          <p>
+            In the <strong>“Input parameters”</strong> block, click <strong>“+ Add field”</strong>.
+            Fill in the fields:
+          </p>
+
+          <ul>
+            <li><strong>Field code:</strong> generated automatically (for example, <code>field_input_1</code>).</li>
+            <li><strong>Field name:</strong> enter a clear name (for example, “Deal ID”).</li>
+            <li><strong>Test value:</strong> fill in a value for testing.</li>
+          </ul>
+
+          <p>
+            Add the second field the same way (for example, “Contact ID”).
+          </p>
+
+          <h2><span aria-hidden="true">3️⃣</span> <span aria-hidden="true">➡️</span> Step 3: Configure output parameters</h2>
+          <p>
+            Output parameters are the data the robot returns after it completes its work.
+          </p>
+
+          <img src="assets/3.jpg" width="100%" alt="Configuring output parameters">
+
+          <p>
+            In the <strong>“Output parameters”</strong> block, click <strong>“+ Add field”</strong>.
+            Fill in the fields:
+          </p>
+
+          <ul>
+            <li><strong>Field code:</strong> for example, <code>field_output_1</code>.</li>
+            <li><strong>Field name:</strong> for example, a user-friendly name for <code>field_output_1</code>.</li>
+          </ul>
+
+          <p>
+            <strong>Important:</strong> if the parameter should return a list (an array), enable the
+            <strong>“Multiple”</strong> switch to the right of the field.
+          </p>
+
+          <h2><span aria-hidden="true">4️⃣</span> <span aria-hidden="true">🧑‍💻</span> Step 4: Work with the code editor</h2>
+          <p>
+            Scroll down to the <strong>“Robot/Activity code”</strong> section. Here you will find a Python code editor
+            with syntax highlighting and autocomplete, similar to the VS Code editor.
+          </p>
+
+          <img src="assets/4.jpg" width="100%" alt="Working with the code editor">
+
+          <p>
+            At the top of the file, there is usually help in comments: which objects and libraries are available by default:
+          </p>
+
+          <ul>
+            <li><code>params</code> — a list of all input and output parameters.</li>
+            <li><code>logger</code> — a logger for debugging.</li>
+            <li><code>accessToken</code>, <code>memberId</code>, <code>domain</code> — portal data.</li>
+            <li><code>B24App</code> — a Python SDK object for working with the Bitrix24 REST API.</li>
+            <li>Standard Python libraries: <code>math</code>, <code>datetime</code>, <code>os</code>, <code>json</code>, <code>http.client</code>, and others.</li>
+            <li>Additional libraries: <code>b24pysdk</code>, <code>qrcode</code>, <code>requests</code>, <code>pillow</code>, <code>numpy</code>, <code>matplotlib</code>.</li>
+          </ul>
+
+          <h2><span aria-hidden="true">5️⃣</span> <span aria-hidden="true">🧪</span> Step 5: Test the robot/activity</h2>
+          <p>
+            Before saving, it is worth checking how the code works. Scroll down to the
+            <strong>“Testing requests”</strong> block.
+          </p>
+
+          <img src="assets/5.jpg" width="100%" alt="Testing the robot/activity">
+
+          <p>
+            Go back to the <strong>input parameters</strong> and fill the <strong>“Test value”</strong> column
+            (for example, <code>123</code>). Then click the blue <strong>“Run test”</strong> button on the right side
+            of the testing block.
+          </p>
+
+          <p>
+            Check the <strong>“Logs”</strong> section at the bottom. On success, you will see green
+            <strong>INFO</strong> labels. Errors are displayed in red <strong>ERROR</strong>.
+          </p>
+
+          <h2><span aria-hidden="true">6️⃣</span> <span aria-hidden="true">🧾</span> Step 6: Use the logger</h2>
+          <p>
+            For debugging, print messages to the log. In the code editor (below the help comments) you can add, for example:
+          </p>
+
+          <pre><code>logger.info("Test message")
+logger.debug("Debugging details")
+logger.warning("Warning")</code></pre>
+
+          <p>
+            Click <strong>“Run test”</strong> again. Your messages will appear in the <strong>“Logs”</strong> block.
+            Use the tabs at the top (<strong>DEBUG</strong>, <strong>INFO</strong>, <strong>WARN</strong>,
+            <strong>ERROR</strong>) to see only the messages of the log level you need.
+          </p>
+
+          <h2><span aria-hidden="true">7️⃣</span> <span aria-hidden="true">💾</span> Step 7: Save</h2>
+          <p>
+            When parameters are set, the code is written, and you have tested it, click the blue
+            <strong>“Save changes”</strong> button at the bottom of the page (or in the bottom-right corner).
+          </p>
+
+          <img src="assets/6.jpg" width="100%" alt="Saving the robot/activity">
+
+          <p>
+            After saving, the new activity is created and becomes available for use in the Bitrix24 business process designer.
+          </p>
+
+          <h3><span aria-hidden="true">📦</span> Import and export scripts</h3>
+          <img src="assets/7.jpg" width="100%" alt="Import and export scripts">
+
+          <p>
+            The page also provides <strong>import</strong> and <strong>export</strong> options for the created scripts.
+            This helps you keep versions and transfer code between portals.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <img src="assets/bitrix24-silver-partner.png" alt="Bitrix24 Silver Partner" class="footer__badge">
+        <p class="footer__copyright">© 2026 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

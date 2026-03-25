@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Как создать новую активити (робота) в RoboREST для Битрикс24: параметры, редактор кода, тестирование.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <title>Создание робота/активити RoboREST | MSITE.TOP</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Главная">
+        <img src="assets/logo.png" alt="MSITE.TOP" width="140" height="44">
+      </a>
+      <nav class="header__nav" aria-label="Навигация">
+        <ul class="header__menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html#contact">Контакты</a></li>
+          <li><a href="roborest-guide.html">Инструкция RoboREST</a></li>
+          <li><a href="roborest-guide-create-activity.html" aria-current="page">Создание робота/активити</a></li>
+          <li><a href="roborest-guide-cron-jobs.html">Cron jobs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--legal">
+      <div class="container">
+        <div class="legal-content">
+          <h1><span aria-hidden="true">🤖</span> Создание робота/активити</h1>
+
+          <p>
+            Эта инструкция показывает, как создать новое робота/активити в приложении
+            <strong>RoboREST</strong> для Битрикс24, настроить входящие и исходящие параметры,
+            работать с редактором Python-кода и проверить результат тестом.
+          </p>
+
+          <h2><span aria-hidden="true">1️⃣</span> <span aria-hidden="true">➕</span> Шаг 1: создание нового робота/активити</h2>
+          <p>
+            Новое активити удобнее создать одним из двух способов: взять за основу подходящий пример
+            на вкладке <strong>«Примеры»</strong> либо начать с нуля — на главном экране RoboREST
+            нажмите зелёную кнопку <strong>«+ Добавить активити / робота»</strong> в правом верхнем углу.
+          </p>
+
+          <img src="assets/1.jpg" width="100%" alt="Создание нового робота/активити">
+
+          <p>
+            Откроется страница создания нового робота/активити. Введите название
+            и перейдите к настройке параметров.
+          </p>
+
+          <h2><span aria-hidden="true">2️⃣</span> <span aria-hidden="true">⬅️</span> Шаг 2: настройка входящих параметров</h2>
+          <p>
+            Входящие параметры — это данные, которые робот получит на вход (например, из предыдущего
+            шага бизнес-процесса).
+          </p>
+          <img src="assets/2.jpg" width="100%" alt="Настройка входящих параметров">
+          <p>
+            В блоке <strong>«Входящие параметры»</strong> нажмите кнопку <strong>«+ Добавить поле»</strong>.
+            Заполните появившиеся строки:
+          </p>
+          <ul>
+            <li><strong>Код поля:</strong> генерируется автоматически (например, <code>field_input_1</code>).</li>
+            <li><strong>Название поля:</strong> введите понятное имя (например, «Идентификатор сделки»).</li>
+            <li><strong>Значение для тестирования:</strong> заполните значением для тестирования.</li>
+          </ul>
+          <p>
+            Добавьте второе поле таким же образом (например, «Идентификатор контакта»).
+          </p>
+          
+
+
+          <h2><span aria-hidden="true">3️⃣</span> <span aria-hidden="true">➡️</span> Шаг 3: настройка исходящих параметров</h2>
+          <p>
+            Исходящие параметры — это данные, которые робот вернёт после выполнения своей работы.
+          </p>
+          <img src="assets/3.jpg" width="100%" alt="Настройка исходящих параметров">
+          <p>
+            В блоке <strong>«Исходящие параметры»</strong> нажмите <strong>«+ Добавить поле»</strong>.
+            Заполните поля:
+          </p>
+          <ul>
+            <li><strong>Код поля:</strong> например, <code>field_output_1</code>.</li>
+            <li><strong>Название поля:</strong> например, понятное имя для <code>field_output_1</code>.</li>
+          </ul>
+          <p>
+            <strong>Важно:</strong> если параметр должен возвращать список данных (массив), включите
+            переключатель <strong>«Множественное»</strong> справа от поля.
+          </p>
+
+          <h2><span aria-hidden="true">4️⃣</span> <span aria-hidden="true">🧑‍💻</span> Шаг 4: работа с редактором кода</h2>
+          <p>
+            Прокрутите страницу вниз до блока <strong>«Код робота/активити»</strong>. Здесь находится редактор Python-кода
+            с подсветкой синтаксиса и автодополнением, аналогичный редактору VS Code.
+          </p>
+          <img src="assets/4.jpg" width="100%" alt="Работа с редактором кода">
+          <p>
+            В начале файла обычно есть справка в комментариях: какие объекты и библиотеки доступны по умолчанию:
+          </p>
+          <ul>
+            <li><code>params</code> — список всех входящих и исходящих параметров.</li>
+            <li><code>logger</code> — логгер для отладки.</li>
+            <li><code>accessToken</code>, <code>memberId</code>, <code>domain</code> — данные портала.</li>
+            <li><code>B24App</code> — объект Python SDK для работы с REST API Битрикс24.</li>
+            <li>Стандартные библиотеки Python: <code>math</code>, <code>datetime</code>, <code>os</code>, <code>json</code>, <code>http.client</code> и другие.</li>
+            <li>Дополнительные библиотеки: <code>b24pysdk</code>, <code>qrcode</code>, <code>requests</code>, <code>pillow</code>, <code>numpy</code>, <code>matplotlib</code>.</li>
+          </ul>
+
+          <h2><span aria-hidden="true">5️⃣</span> <span aria-hidden="true">🧪</span> Шаг 5: тестирование робота/активити</h2>
+          <p>
+            Перед сохранением стоит проверить, как работает код. Прокрутите вниз до блока
+            <strong>«Тестирование запросов»</strong>.
+          </p>
+          <img src="assets/5.jpg" width="100%" alt="Тестирование робота/активити">
+          <p>
+            Вернитесь к <strong>входящим параметрам</strong> и заполните колонку
+            <strong>«Значение для тестирования»</strong> (например, <code>123</code>).
+            Затем нажмите синюю кнопку <strong>«Выполнить тест»</strong> справа от блока тестирования.
+          </p>
+          <p>
+            Смотрите блок <strong>«Логи»</strong> внизу. При успешном выполнении появятся зелёные метки
+            <strong>INFO</strong>. Ошибки отображаются красным уровнем <strong>ERROR</strong>.
+          </p>
+
+          <h2><span aria-hidden="true">6️⃣</span> <span aria-hidden="true">🧾</span> Шаг 6: использование логгера</h2>
+          <p>
+            Для отладки выводите сообщения в лог. В редакторе кода (ниже комментариев со справкой) можно добавить, например:
+          </p>
+          <pre><code>logger.info("Тестовое сообщение")
+logger.debug("Отладочная информация")
+logger.warning("Предупреждение")</code></pre>
+          <p>
+            Снова нажмите <strong>«Выполнить тест»</strong>. В блоке <strong>«Логи»</strong> появятся ваши сообщения.
+            Фильтруйте их вкладками сверху (<strong>DEBUG</strong>, <strong>INFO</strong>, <strong>WARN</strong>,
+            <strong>ERROR</strong>), чтобы видеть только сообщения нужного уровня.
+          </p>
+
+          <h2><span aria-hidden="true">7️⃣</span> <span aria-hidden="true">💾</span> Шаг 7: сохранение</h2>
+          <p>
+            Когда параметры настроены, код написан и протестирован, нажмите синюю кнопку
+            <strong>«Сохранить изменения»</strong> внизу страницы (или в правом нижнем углу).
+          </p>
+          <img src="assets/6.jpg" width="100%" alt="Сохранение робота/активити">
+          <p>
+            После сохранения новая активити создана и доступна для использования в конструкторе бизнес-процессов Битрикс24.
+          </p>
+          <h3><span aria-hidden="true">📦</span> Импорт и экспорт скриптов</h3>
+          <img src="assets/7.jpg" width="100%" alt="Импорт и экспорт скриптов">
+          <p>
+            Также на странице доступна возможность <strong>импорта</strong> и <strong>экспорта</strong>
+            созданных скриптов — это помогает сохранять версии и переносить код между порталами.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <img src="assets/bitrix24-silver-partner.png" alt="Bitrix24 Silver Partner" class="footer__badge">
+        <p class="footer__copyright">© 2026 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cron jobs в RoboREST: отличия от роботов/активити, блок расписания CRON и статус задания.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <title>Cron jobs — задания по расписанию RoboREST | MSITE.TOP</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Главная">
+        <img src="assets/logo.png" alt="MSITE.TOP" width="140" height="44">
+      </a>
+      <nav class="header__nav" aria-label="Навигация">
+        <ul class="header__menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html#contact">Контакты</a></li>
+          <li><a href="roborest-guide.html">Инструкция RoboREST</a></li>
+          <li><a href="roborest-guide-create-activity.html">Создание робота/активити</a></li>
+          <li><a href="roborest-guide-cron-jobs.html" aria-current="page">Cron jobs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--legal">
+      <div class="container">
+        <div class="legal-content">
+          <h1><span aria-hidden="true">⏰</span> Cron jobs — задания по расписанию</h1>
+
+          <p>
+            Крон-задание устроено так же, как робот/активити в RoboREST: тот же экран редактирования, Python-код,
+            тест и сохранение. Подробные шаги (редактор, тестирование, логи, сохранение, импорт/экспорт) описаны в
+            <a href="roborest-guide-create-activity.html">инструкции по созданию робота/активити</a>.
+          </p>
+
+          <h2><span aria-hidden="true">📅</span> Расписание и статус задания</h2>
+          <p>
+            На странице редактирования крон-задания блок <strong>«Расписание»</strong> (Schedule) задаёт,
+            <strong>когда</strong> выполняется код и включено ли задание. В типе расписания можно выбрать
+            <strong>простое</strong> (Simple Schedule) или <strong>расширенное</strong> (Advanced / CRON).
+          </p>
+
+          <img src="assets/8.jpg" width="100%" alt="Блок расписания: простой или расширенный режим, статус, CRON и шаблоны">
+
+          <ul>
+            <li><strong>Простое расписание (Simple Schedule):</strong> без ручного CRON — выбираете готовую периодичность: раз в минуту, час, день и т.д.</li>
+            <li><strong>Расширенный (CRON):</strong> запуск задаётся через <strong>CRON-выражение</strong> (пять полей: минута, час, день месяца, месяц, день недели; формат подсказан под полем). Доступны <strong>быстрые шаблоны</strong> — кнопки вроде «Каждую минуту», «Ежедневно в 09:00» и т.п., подставляющие готовое выражение.</li>
+            <li><strong>Статус:</strong> <strong>«Активно»</strong> или <strong>«Неактивно»</strong> — неактивное задание не запускается по расписанию.</li>
+          </ul>
+
+          <p>
+            Внизу блока обычно показывается пояснение с текущим временем (например UTC) и выбранным расписанием.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <img src="assets/bitrix24-silver-partner.png" alt="Bitrix24 Silver Partner" class="footer__badge">
+        <p class="footer__copyright">© 2026 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
