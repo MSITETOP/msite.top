@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cron jobs in RoboREST: differences from robots/activities, CRON schedule block, and job status.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <title>Cron jobs — scheduled tasks in RoboREST | MSITE.TOP</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Home">
+        <img src="assets/logo.png" alt="MSITE.TOP" width="140" height="44">
+      </a>
+      <nav class="header__nav" aria-label="Navigation">
+        <ul class="header__menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#contact">Contacts</a></li>
+          <li><a href="roborest-guide-en.html">RoboREST Guide</a></li>
+          <li><a href="roborest-guide-create-activity-en.html">Create Activity</a></li>
+          <li><a href="roborest-guide-cron-jobs-en.html" aria-current="page">Cron jobs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--legal">
+      <div class="container">
+        <div class="legal-content">
+          <h1><span aria-hidden="true">⏰</span> Cron jobs — scheduled tasks</h1>
+
+          <p>
+            A cron job works like a robot/activity in RoboREST: the same edit screen, Python code,
+            test, and save. Detailed steps (editor, testing, logs, save, import/export) are in the
+            <a href="roborest-guide-create-activity-en.html">create robot/activity guide</a>.
+          </p>
+
+          <h2><span aria-hidden="true">📅</span> Schedule and job status</h2>
+          <p>
+            On the cron job edit page, the <strong>Schedule</strong> block defines <strong>when</strong>
+            the code runs and whether the job is enabled. You can choose <strong>simple</strong>
+            (Simple Schedule) or <strong>advanced</strong> (Advanced / CRON) schedule type.
+          </p>
+
+          <img src="assets/8.jpg" width="100%" alt="Schedule block: simple or advanced mode, status, CRON, and templates">
+
+          <ul>
+            <li><strong>Simple schedule:</strong> no manual CRON — pick a preset such as every minute, hour, day, and so on.</li>
+            <li><strong>Advanced (CRON):</strong> runs are defined with a <strong>CRON expression</strong> (five fields: minute, hour, day of month, month, day of week; the format is explained under the field). <strong>Quick templates</strong> are available — buttons like “Every minute”, “Daily at 09:00”, etc., that insert a ready-made expression.</li>
+            <li><strong>Status:</strong> <strong>Active</strong> or <strong>Inactive</strong> — inactive jobs do not run on schedule.</li>
+          </ul>
+
+          <p>
+            The bottom of the block usually shows a note with the current time (for example UTC) and the selected schedule.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <img src="assets/bitrix24-silver-partner.png" alt="Bitrix24 Silver Partner" class="footer__badge">
+        <p class="footer__copyright">© 2026 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
