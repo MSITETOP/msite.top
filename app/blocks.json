@@ -10,16 +10,7 @@
   "msite_contact",
   "msite_footer",
   "msite_404",
-  // "msite_article_cover_image",
-  // "msite_article_date",
-  // "msite_article_heading_h2",
-  // "msite_article_paragraph",
-  // "msite_article_image",
-  // "msite_article_image_with_caption",
-  // "msite_article_numbered_content",
-  // "msite_article_steps_with_images",
   "msite_article_code",
   "msite_article_toc",
-  // "msite_article_markdown",
   "msite_article_dashboard_map"
 ]
